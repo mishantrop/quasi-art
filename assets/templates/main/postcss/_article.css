@@ -1,0 +1,268 @@
+@import '_article-tags.css';
+
+.article {
+  a {
+    color: var(--second-color);
+    &:hover {
+      color: var(--second-color--hover);
+      text-decoration: none;
+    }
+  }
+
+  &__header {
+    margin: 0 0 2rem;
+  }
+
+  &__footer {
+    display: block;
+
+    @media print {
+        display: none;
+    }
+  }
+
+  &__content {
+    margin: 0 0 2rem 0;
+
+    a {
+      color: var(--second-color);
+      text-decoration-skip: ink;
+      text-decoration: underline;
+      text-underline-position: under;
+
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: left;
+      word-break: break-word;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--second-color);
+      color: #222;
+      display: block;
+      float: right;
+      margin-left: 30px;
+      max-width: 400px;
+      padding: 5px;
+      text-align: right;
+
+      strong {
+        display: block;
+        text-align: right;
+      }
+
+      @media (--mobile) {
+        float: none;
+        margin-left: 0;
+        max-width: none;
+        width: 100%;
+      }
+    }
+
+    figure {
+      text-align: center;
+
+      figcaption {
+        font-size: 1rem;
+        line-height: 28px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &-figure {
+      text-align: center;
+
+      &--half {
+        margin: 0 auto;
+        max-width: 50%;
+
+        @media (--tablet) {
+          max-width: 100%;
+        }
+      }
+
+      &-figcaption {
+        font-size: 1rem;
+        line-height: 28px;
+      }
+
+      &-image {
+        max-width: 100%;
+      }
+    }
+
+    ul {
+      list-style-position: outside;
+      margin: 0 0 1rem;
+      padding: 0 0 0 2rem;
+
+      &.square {
+        list-style-position: outside;
+        margin: 0 0 1rem 0;
+      }
+    }
+
+    ol {
+      list-style-position: outside;
+      margin: 0 0 1rem 0;
+      padding: 0 0 0 2rem;
+    }
+
+    li>ul {
+      margin-left: 20px;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: normal;
+    }
+
+    h1 {
+      color: var(--main-color);
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      padding: 3rem 0;
+
+      @media (--tablet) {
+        font-size: 2rem;
+      }
+    }
+
+    h2 {
+      clear: both;
+      color: var(--second-color);
+      font-size: 2.2rem;
+      margin: 0;
+      padding: 3rem 0 1rem;
+      word-break: break-word;
+
+      @media (--tablet) {
+        font-size: 1.8rem;
+      }
+
+      &:first-child {
+        padding: 1rem 0;
+      }
+    }
+
+    h3 {
+      color: var(--second-color);
+      font-size: 1.8rem;
+
+      @media (--tablet) {
+        font-size: 1.6rem;
+      }
+    }
+
+    h4 {
+      color: var(--second-color);
+      font-size: 1.6rem;
+
+      @media (--tablet) {
+        font-size: 1.4rem;
+      }
+    }
+
+    code {
+      background-color: #fff;
+      border-left: 2px solid var(--second-color);
+      border-radius: 0;
+      display: block;
+      margin: 10px;
+      padding: 10px;
+      word-break: break-all;
+    }
+
+    pre {
+      background-color: transparent;
+      border-radius: 0;
+      border: 0;
+      color: inherit;
+      font-size: 1rem;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      word-break: break-all;
+      word-wrap: break-word;
+
+      code {
+        margin: 10px;
+        /* white-space: pre-wrap; */
+      }
+    }
+
+    table {
+      max-width: 100%;
+
+      @media (--tablet) {
+        width: 100%;
+      }
+    }
+  }
+
+  &-figure {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &-title {
+    color: var(--main-color);
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: left;
+    text-transform: uppercase;
+    word-break: break-word;
+
+    @media (--desktop) {
+      font-size: 2rem;
+    }
+
+    @media (--tablet) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-time {
+      clear: both;
+      color: #666;
+      display: block;
+      line-height: 2em;
+      min-height: 2em;
+
+      svg {
+          display: inline-block;
+          margin: 0 5px 0 0;
+          width: 18px;
+          height: 18px;
+
+          path {
+              fill: #666;
+          }
+      }
+  }
+
+  ul, ol {
+    li {
+      margin: 0 0 1rem 0;
+    }
+  }
+}
+
+blockquote,
+cite,
+q {
+  quotes: '\00ab' '\00bb';
+}

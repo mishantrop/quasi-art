@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    font: normal 100% Verdana;
+    font-size: 30px;
+    color: #222;
+    margin: 0px;
+    padding: 8px;
+    width: 100%;
+    line-height: 38px;
+}
+
+a {
+    color: #226;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    color: #668;
+    text-decoration: none;
+    text-shadow: 0 0 1px #d22;
+}

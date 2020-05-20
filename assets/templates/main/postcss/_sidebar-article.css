@@ -1,0 +1,28 @@
+.sidebar-title {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sidebar-article {
+  display: flex;
+  overflow: hidden;
+  vertical-align: top;
+  &__image {
+    display: block;
+    height: 50px;
+    margin: 0 10px 0 0;
+    width: 50px;
+  }
+  &__time {
+    color: #666;
+    display: none;
+    font-size: 0.8rem;
+  }
+  &__title {}
+}

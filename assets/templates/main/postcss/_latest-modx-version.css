@@ -1,0 +1,15 @@
+.latest-modx-version {
+    background-color: #fefefe;
+    font-size: 1.1rem;
+    padding: 1rem;
+
+    svg {
+      display: inline;
+      height: 14px;
+      width: 14px;
+
+      path {
+        fill: var(--main-color);
+      }
+    }
+}

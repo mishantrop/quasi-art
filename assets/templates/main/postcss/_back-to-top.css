@@ -1,0 +1,42 @@
+.back-to-top {
+  background-color: var(--second-color);
+  border-radius: 32px;
+  bottom: -100px;
+  box-shadow: 2px 2px 8px 0px #717171;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 10px;
+  position: fixed;
+  right: 64px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s linear, bottom 0.2s linear, opacity 0.2s linear, bottom 0.2s linear, height 0.2s linear, right 0.2s linear, width 0.2s linear;
+  width: 0;
+  z-index: 3;
+
+  &--active {
+    bottom: 32px;
+    height: 64px;
+    opacity: 0.99;
+    right: 32px;
+    width: 64px;
+  }
+
+  &:active, &:focus, &:hover {
+    background-color: var(--second-color--hover);
+  }
+
+  svg {
+    height: 100%;
+    width: 100%;
+    path {
+      fill: #fff;
+      display: block;
+    }
+  }
+}

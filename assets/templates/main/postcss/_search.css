@@ -1,0 +1,44 @@
+.search {
+	&-result {
+		margin: 0 0 1.5rem 0;
+		max-width: 666px;
+
+    &__header {
+			font-size: 1.5rem !important;
+			font-weight: normal !important;
+		}
+
+    &__link {
+			color: var(--main-color) !important;
+			text-decoration: none;
+
+      &:hover {
+				text-decoration: underline;
+			}
+		}
+
+    &__body {
+			color: #444;
+			font-size: 1rem;
+		}
+
+    &__time {
+			color: #666;
+		}
+	}
+}
+.sisea {
+
+  &-results {
+		color: #666;
+		font-size: 0.8rem;
+	}
+
+  &-paging {
+		padding: 2rem 0;
+	}
+
+  &-highlight {
+		font-weight: bold;
+	}
+}

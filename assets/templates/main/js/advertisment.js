@@ -1,0 +1,1 @@
+window.AdBlocking = false;

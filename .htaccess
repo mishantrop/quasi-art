@@ -1,0 +1,60 @@
+SetEnv MODX_ENV production
+
+php_value date.timezone "Europe/Moscow"
+
+RewriteEngine On
+RewriteBase /
+Options -Indexes
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
+RewriteCond %{HTTP_HOST} ^quasiart\.ru
+RewriteRule (.*)$ https://quasi-art.ru/$1 [R=301,L]
+
+#RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+#RewriteRule ^index\.php$ https://quasi-art.ru/ [R=301,L]
+
+# Redirects from old pages
+RewriteRule ^tutorials$ /library [R=301,L]
+RewriteRule ^luxrender_russian_documentation$ /library/luxrender-documentation [R=301,L]
+RewriteRule ^luxrender_russian_documentation/(.*)$ /library/luxrender-documentation/$1 [R=301,L]
+RewriteRule ^tutorials/blender/plasmaball$ /library/blender/plasmaball [R=301,L]
+RewriteRule ^tutorials/blender/stencil$ /library/blender/stencil [R=301,L]
+RewriteRule ^tutorials/blender/dynamic_paint_basics$ /library/blender/dynamic-paint-basics [R=301,L]
+RewriteRule ^images/textures/10_100_1000_5000_rub.jpg /data/images/10_100_1000_5000_rub.jpg [R=301,L]
+RewriteRule ^images/textures/10_100_1000_5000_rub_m.jpg /data/images/10_100_1000_5000_rub_m.jpg [R=301,L]
+
+# Rewrite www.domain.com -> domain.com -- used with SEO Strict URLs plugin
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# skip subdomain m.quasi-art.ru
+RewriteCond %{HTTP_HOST} ^m\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# skip subdomain static.quasi-art.ru
+RewriteCond %{HTTP_HOST} ^static\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+#RewriteCond %{SERVER_PORT} !^443
+#RewriteRule (.*) https://quasi-art.ru/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/([0-9]+)$ index.php?q=$1&page=$2 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.*)/
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+
+php_flag zlib.output_compression On
+php_value zlib.output_compression_level 5

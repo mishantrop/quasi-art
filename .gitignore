@@ -1,0 +1,4 @@
+node_modules
+.remote-sync.json
+backupdatabase.php
+config.core.php

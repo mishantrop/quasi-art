@@ -1,0 +1,151 @@
+.resume-header {
+  align-items: center;
+  background-color: var(--main-color);
+  display: flex;
+  height: 720px;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+  @media (--notebook) {
+    height: 600px;
+  }
+  @media (--desktop) {
+    height: 500px;
+  }
+  @media (--tablet) {
+    height: 400px;
+  }
+  @media (--mobile) {
+    height: auto;
+  }
+  &__bg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &--0 {
+      background-image: url('../images/resume-web-developer-0.jpg');
+
+      @media (--tablet) {
+        background-image: url('../images/resume-web-developer-0--tablet.jpg');
+        filter: blur(2px);
+      }
+
+      @media (--mobile) {
+        background-image: url('../images/resume-web-developer-0--mobile.jpg');
+        filter: blur(2px);
+      }
+    }
+
+    &--1 {
+      background-image: url('../images/resume-web-developer-1.jpg');
+
+      @media (--tablet) {
+        background-image: url('../images/resume-web-developer-1--tablet.jpg');
+        filter: blur(2px);
+      }
+
+      @media (--mobile) {
+        background-image: url('../images/resume-web-developer-1--mobile.jpg');
+        filter: blur(2px);
+      }
+    }
+  }
+  &__info {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 2rem;
+    width: 60%;
+    z-index: 1;
+
+    @media (--notebook) {}
+
+    @media (--desktop) {
+      width: 65%;
+    }
+
+    @media (--tablet) {
+      font-size: 1.2rem;
+      width: 65%;
+    }
+
+    @media (--mobile) {
+      font-size: 1rem;
+      padding: 3rem 1rem;
+      text-shadow: 1px 1px 2px #000;
+      width: 100%;
+    }
+
+    &-left {
+      display: block;
+      max-width: 500px;
+    }
+  }
+  &__write {
+    appearance: none;
+    background-color: #233539;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: normal;
+    outline: none;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    user-select: none;
+    vertical-align: middle;
+
+    span {
+      align-items: center;
+      display: flex;
+      pointer-events: none;
+      position: relative;
+    }
+
+    svg {
+      display: block;
+      margin: 0 1rem 0 0;
+
+      path {
+        fill: #fff;
+      }
+    }
+
+    &::before {
+      --size: 0;
+      background: radial-gradient(circle closest-side, #b14, transparent);
+      content: '';
+      height: var(--size);
+      left: var(--x);
+      position: absolute;
+      top: var(--y);
+      transform: translate(-50%, -50%);
+      transition: width 0.3s ease, height 0.3s ease;
+      width: var(--size);
+    }
+    &:hover::before {
+      --size: 200px;
+    }
+
+    &:hover, &:focus {
+      background-color: #881a3c;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

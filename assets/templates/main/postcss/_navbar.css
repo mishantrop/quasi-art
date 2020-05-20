@@ -1,0 +1,182 @@
+.nav-item {}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .active>.nav-link:hover {
+  color: var(--second-color--hover);
+  svg {
+    path {
+      fill: var(--second-color);
+    }
+  }
+}
+
+/* Менюшка, её по умолчанию нужно скрывать для мобильников, чтобы страница не скакала */
+
+.navbar {
+  border: 0;
+  margin-bottom: 0;
+  min-height: auto;
+  position: relative;
+
+  @media (--tablet) {
+    display: table-row;
+  }
+
+  @media print {
+    display: none !important;
+  }
+
+  &-menu {
+    @media (--tablet) {
+      display: none;
+
+      &.in {
+        @media (--tablet) {
+          background-color: #fff;
+          bottom: 0;
+          display: block;
+          left: 0;
+          padding: 0.5rem 2rem;
+          position: fixed;
+          right: 0;
+          top: 0;
+          z-index: 4;
+        }
+      }
+    }
+  }
+
+  & .navbar-nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    @media (--tablet) {
+      display: block;
+    }
+    & .nav-item {
+      float: left;
+      font-size: 1.2rem;
+
+      &:first-child {
+        & .nav-link {
+          padding-left: 0;
+          @media (--tablet) {
+            padding-left: 0.5rem;
+          }
+        }
+      }
+
+      @media (--tablet) {
+        display: block;
+        float: none;
+
+        & .nav-link {
+          padding-left: 0 !important;
+        }
+      }
+    }
+    & .nav-link {
+      align-items: center;
+      color: #222;
+      display: flex;
+      padding: 0.5rem 1rem;
+      transition: color 0.1s linear;
+
+      @media (--desktop) {
+        padding: 0.5rem;
+      }
+
+      svg {
+        height: 18px;
+        margin: 0 5px 0 0;
+        width: 18px;
+        path {
+          fill: inherit;
+          display: block;
+        }
+      }
+      &:focus, &:hover {
+        color: var(--second-color--hover);
+        svg {
+          path {
+            fill: var(--second-color);
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    align-items: center;
+    background-color: #fff;
+    background-image: none;
+    color: #222;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    margin: 0 0 10px;
+    outline: none;
+    padding: 8px;
+    text-align: center;
+    transition: background-color 0.1s linear;
+    width: 100%;
+
+    @media (--tablet) {
+      display: table-cell;
+      margin: 20px 10px 20px 0;
+      width: 38px;
+    }
+
+    &:hover {
+      background-color: #eee;
+    }
+
+    &.active {
+      margin: 0;
+      padding: 8px;
+      position: fixed;
+      right: 1rem;
+      top: 1rem;
+      z-index: 5;
+      width: auto;
+    }
+
+    .navbar-icon {
+      display: block;
+      height: 20px;
+      margin: 0 10px 0 0;
+      width: 20px;
+      @media (--tablet) {
+        margin: 0;
+      }
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+      &--closed {}
+      &--opened {
+        display: none;
+      }
+    }
+
+    span {
+      @media (--tablet) {
+        display: none;
+      }
+    }
+  }
+}
+
+#nav-toggle {
+  &.active {}
+}
+
+@media (--tablet) {
+  .navbar-toggleable-xs {
+    margin-top: 1rem;
+  }
+  .navbar-nav .nav-item, .navbar-nav .nav-item+.nav-item {
+    display: block;
+    float: none;
+    margin-left: 0;
+  }
+}

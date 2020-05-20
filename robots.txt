@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /connectors/
+Disallow: /core/
+Disallow: /dev/
+Disallow: /manager/
+Disallow: /assets/components/
+Disallow: /index.php
+Disallow: /?
+ 
+Host: quasi-art.ru
+Sitemap: https://quasi-art.ru/sitemap.xml
