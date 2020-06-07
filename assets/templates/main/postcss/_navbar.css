@@ -66,6 +66,15 @@
         }
       }
 
+      &:last-child {
+        & .nav-link {
+          padding-right: 0;
+          @media (--tablet) {
+            padding-right: 0.5rem;
+          }
+        }
+      }
+
       @media (--tablet) {
         display: block;
         float: none;
@@ -79,7 +88,7 @@
       align-items: center;
       color: #222;
       display: flex;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0.6rem;
       transition: color 0.1s linear;
 
       @media (--desktop) {
