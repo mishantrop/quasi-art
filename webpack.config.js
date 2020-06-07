@@ -16,7 +16,7 @@ module.exports = {
       loader: 'babel-loader',
       query: {
         plugins: [
-          'babel-plugin-transform-class-properties'
+          'babel-plugin-transform-class-properties',
         ],
         presets: [['env', {
           targets: {
@@ -34,12 +34,12 @@ module.exports = {
           modules: false,
           useBuiltIns: 'entry',
         }]],
-      }
-    }]
+      },
+    }],
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': 'production'
+      'process.env.NODE_ENV': 'production',
     }),
     new UglifyJSPlugin(),
   ],

@@ -1,11 +1,10 @@
-// import { scrollTo } from './scrollto';
 import scrollToElement from 'scroll-to-element';
 
-const initBackToTopScroll = () => {
+export const initBackToTopScroll = () => {
   const backToTopSelector = '.back-to-top';
   const backToTopClassActive = 'back-to-top--active';
   const scrollTrigger = 300;
-  const backToTop = document.querySelector(backToTopSelector) || false;
+  const backToTop = document.querySelector(backToTopSelector);
   if (backToTop) {
     if (window.scrollY > scrollTrigger) {
       backToTop.classList.add(backToTopClassActive);
@@ -23,7 +22,6 @@ const initBackToTopScroll = () => {
     const el = document.querySelector(targetSelector) || false;
     if (el) {
       backToTop.addEventListener('click', () => {
-        // scrollTo(el, 0, 256);
         scrollToElement(targetSelector);
       });
     } else {
@@ -32,8 +30,4 @@ const initBackToTopScroll = () => {
   } else {
     console.log('backToTop not found');
   }
-};
-
-export {
-  initBackToTopScroll,
 };

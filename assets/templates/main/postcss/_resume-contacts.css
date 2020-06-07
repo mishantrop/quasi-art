@@ -28,4 +28,9 @@
       }
     }
   }
+
+  &-form {
+    background-color: #eee;
+    padding: 40px 0;
+  }
 }

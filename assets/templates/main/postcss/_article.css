@@ -1,5 +1,10 @@
 @import '_article-tags.css';
 
+.related-articles {
+  background-color: #eee;
+  padding: 50px 0;
+}
+
 .article {
   a {
     color: var(--second-color);
@@ -195,7 +200,6 @@
 
       code {
         margin: 10px;
-        /* white-space: pre-wrap; */
       }
     }
 
@@ -205,6 +209,15 @@
       @media (--tablet) {
         width: 100%;
       }
+    }
+
+    var {
+      background-color: var(--main-color);
+      color: #fff;
+      font-family: monospace, monospace;
+      font-size: 1em;
+      font-style: normal;
+      padding: 2px;
     }
   }
 

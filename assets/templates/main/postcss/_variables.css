@@ -3,9 +3,8 @@
   --main-color--hover: #011317;
   --second-color: #d36;
   --second-color--hover: #b14;
+
+  --dark-background: #222;
+  --dark-text: #ddd;
+  --dark-link: #fff;
 }
-@custom-media --notebook (max-width: 1366px);
-@custom-media --desktop (max-width: 1200px);
-@custom-media --tablet (max-width: 768px);
-@custom-media --tablet-up (min-width: 768px);
-@custom-media --mobile (max-width: 600px);

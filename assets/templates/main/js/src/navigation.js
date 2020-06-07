@@ -1,9 +1,9 @@
-'use strict';
+import { isTablet } from './helpers';
 
 export default class Navigation {
   constructor() {
     this.state = {
-      isOpen: !this.isMobileNavigation(),
+      isOpenedMobile: !this.isMobileNavigation(),
     };
 
     this.menuToggler = document.querySelector('#nav-toggle');
@@ -20,7 +20,7 @@ export default class Navigation {
   setState(patch) {
     this.state = Object.assign(this.state, patch);
     this.render();
-  };
+  }
 
   init() {
     if (this.menuToggler && this.exCollapsingNavbar2) {
@@ -31,8 +31,8 @@ export default class Navigation {
 
     if (this.navToggle) {
       this.navToggle.addEventListener('click', (e) => {
-        const { isOpen } = this.state;
-        this.setState({ isOpen: !isOpen });
+        const { isOpenedMobile } = this.state;
+        this.setState({ isOpenedMobile: !isOpenedMobile });
         e.preventDefault();
       });
     }
@@ -41,9 +41,9 @@ export default class Navigation {
       /**
        * Если из мобилы перешли в десктоп, то нужно развернуть менюшку
        */
-      const { isOpen } = this.state;
+      const { isOpenedMobile } = this.state;
       this.setState({
-        isOpen: isOpen == this.isMobileNavigation(),
+        isOpenedMobile: isOpenedMobile === this.isMobileNavigation(),
       });
     });
 
@@ -51,13 +51,13 @@ export default class Navigation {
   }
 
   isMobileNavigation() {
-    return +window.innerWidth <= 768;
-  };
+    return isTablet();
+  }
 
   render() {
-    const { isOpen } = this.state;
+    const { isOpenedMobile } = this.state;
 
-    if (!isOpen) {
+    if (!isOpenedMobile && this.isMobileNavigation()) {
       this.navToggle.classList.remove('active');
       this.iconClosed.style.display = 'block';
       this.iconOpened.style.display = 'none';
@@ -68,6 +68,7 @@ export default class Navigation {
       this.iconClosed.style.display = 'none';
       this.iconOpened.style.display = 'block';
       this.exCollapsingNavbar2.classList.add('in');
+
       if (this.isMobileNavigation()) {
         document.querySelector('body').style.overflow = 'hidden';
       }

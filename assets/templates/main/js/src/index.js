@@ -1,6 +1,6 @@
 'use strict';
 
-import quasiform from 'quasiform'; //eslint-disable-line no-unused-vars
+import Quasiform from 'quasiform'; // eslint-disable-line no-unused-vars
 import { initBackToTopScroll } from './backtotop';
 import { initLightbox } from './lightbox.js';
 import { sameHeight } from './sameheight';
@@ -22,7 +22,7 @@ const init = () => {
   detectAdBlock();
   initResume();
   initBackToTopScroll();
-  const navigation = new Navigation();
+  const navigation = new Navigation(); // eslint-disable-line no-unused-vars
 
   sameHeight('.article-item');
   window.addEventListener('resize', () => {
@@ -84,11 +84,11 @@ const init = () => {
     hljs.initHighlightingOnLoad(); // eslint-disable-line no-undef
   }
 
-  let optionsContactsForm = {
+  const optionsContactsForm = {
     hideFormOnSuccess: true,
     selector: '#contacts-form-wrapper',
   };
-  let contactsForm = new quasiform(optionsContactsForm);
+  const contactsForm = new Quasiform(optionsContactsForm); // eslint-disable-line no-unused-vars
 };
 
 if (document.readyState === 'complete' || document.readyState !== 'loading') {

@@ -1,27 +1,25 @@
 import scrollToElement from 'scroll-to-element';
 
-const initResume = () => {
+export const initResume = () => {
   const buttonWrite = document.getElementById('resume-header__write');
-  if (buttonWrite) {
-    buttonWrite.addEventListener('click', (e) => {
-      const targetSelector = buttonWrite.getAttribute('data-target');
-      const target = document.querySelector(targetSelector);
-      if (target) {
-        scrollToElement(targetSelector);
-        e.preventDefault();
-      }
-    });
-
-    buttonWrite.addEventListener('mousemove', (e) => {
-      const x = e.pageX - e.target.offsetLeft;
-      const y = e.pageY - e.target.offsetTop;
-
-      e.target.style.setProperty('--x', `${ x }px`);
-      e.target.style.setProperty('--y', `${ y - 60 }px`);
-    });
+  if (buttonWrite === null) {
+    return;
   }
-};
 
-export {
-  initResume,
+  buttonWrite.addEventListener('click', (event) => {
+    const targetSelector = buttonWrite.getAttribute('data-target');
+    const target = document.querySelector(targetSelector);
+    if (target) {
+      scrollToElement(targetSelector);
+      event.preventDefault();
+    }
+  });
+
+  buttonWrite.addEventListener('mousemove', (event) => {
+    const x = event.pageX - event.target.offsetLeft;
+    const y = event.pageY - event.target.offsetTop;
+
+    event.target.style.setProperty('--x', `${x}px`);
+    event.target.style.setProperty('--y', `${y - 60}px`);
+  });
 };
