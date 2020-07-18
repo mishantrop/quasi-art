@@ -5,7 +5,7 @@
   "main": "index.php",
   "scripts": {
     "start": "webpack --watch --progress --colors",
-    "analyse": "webpack --watch --progress --colors",
+    "analyse": "webpack --watch --progress --colors --env.ANALYZE=1",
     "js": "webpack --watch --progress --colors",
     "lint:js": "./node_modules/.bin/eslint assets/templates/main/js/src/**",
     "css": "gulp watch"
@@ -52,7 +52,7 @@
     "postcss-selector-matches": "3.0.1",
     "postcss-selector-not": "3.0.1",
     "webpack": "3.8.1",
-    "webpack-bundle-analyzer": "2.9.1"
+    "webpack-bundle-analyzer": "^3.8.0"
   },
   "dependencies": {
     "fs": "0.0.1-security",
