@@ -52,7 +52,7 @@
     "postcss-selector-matches": "3.0.1",
     "postcss-selector-not": "3.0.1",
     "webpack": "3.8.1",
-    "webpack-bundle-analyzer": "2.9.1"
+    "webpack-bundle-analyzer": "3.3.2"
   },
   "dependencies": {
     "fs": "0.0.1-security",
