@@ -1,92 +1,95 @@
 .topmenu-search {
+  overflow: hidden;
+
+  @media (--desktop) {
+    clear: both;
+    float: none;
     overflow: hidden;
+    width: 100%;
+  }
+
+  @media (--tablet) {
+    display: table-cell;
+    margin: 20px 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  &__form {
+    background-color: #fff;
+    float: right;
+    position: relative;
 
     @media (--desktop) {
-      clear: both;
       float: none;
-      overflow: hidden;
       width: 100%;
     }
+  }
 
-    @media (--tablet) {
-      display: table-cell;
-      margin: 20px 0;
-      padding: 0;
-      vertical-align: middle;
+  &__input {
+    background-color: #fff;
+    border: 0;
+    border-left: 3px solid var(--main-color);
+    border-radius: 0;
+    color: var(--main-color);
+    line-height: 2.3125rem;
+    padding: 0 15px;
+    transition: border-color 0.2s linear;
+    width: 100%;
+
+    &:focus {
+      border-left: 3px solid var(--second-color);
+      outline-color: transparent;
+      outline-offset: 0;
     }
+  }
 
-    &__form {
-      background-color: #fff;
-      float: right;
-      position: relative;
+  &__submit {
+    border: 0;
+    background-color: transparent;
+    color: var(--main-color);
+    cursor: pointer;
+    line-height: 2.3125rem;
+    padding: 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: color 0.2s linear;
 
-      @media (--desktop) {
-        float: none;
-        width: 100%;
+    svg {
+      display: block;
+      height: 21px;
+      width: 21px;
+
+      path {
+        fill: var(--main-color);
       }
     }
 
-    &__input {
-        background-color: #fff;
-        border: 0;
-        border-left: 3px solid var(--main-color);
-        border-radius: 0;
-        color: var(--main-color);
-        line-height: 2.3125rem;
-        padding: 0 15px;
-        transition: border-color 0.2s linear;
-        width: 100%;
-
-        &:focus {
-            border-left: 3px solid var(--second-color);
-            outline-color: transparent;
+    &:hover {
+      svg {
+        path {
+          fill: var(--second-color);
         }
+      }
+
+      color: var(--main-color--hover);
     }
+  }
 
-    &__submit {
-        border: 0;
-        background-color: transparent;
-        color: var(--main-color);
-        cursor: pointer;
-        line-height: 2.3125rem;
-        padding: 8px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transition: color 0.2s linear;
+  &__input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
 
-        svg {
-          display: block;
-          height: 21px;
-          width: 21px;
-          path {
-            fill: var(--main-color);
-          }
-        }
+  &__input:focus::-moz-placeholder {
+    color: transparent;
+  }
 
-        &:hover {
-          svg {
-            path {
-              fill: var(--second-color);
-            }
-          }
-          color: var(--main-color--hover);
-        }
-    }
+  &__input:focus:-moz-placeholder {
+    color: transparent;
+  }
 
-    &__input:focus::-webkit-input-placeholder {
-        color: transparent;
-    }
-
-    &__input:focus::-moz-placeholder {
-        color: transparent;
-    }
-
-    &__input:focus:-moz-placeholder {
-        color: transparent;
-    }
-
-    &__input:focus:-ms-input-placeholder {
-        color: transparent;
-    }
+  &__input:focus:-ms-input-placeholder {
+    color: transparent;
+  }
 }

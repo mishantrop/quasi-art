@@ -1,6 +1,6 @@
 @font-face {
-    font-display: swap;
-    font-family: 'PT Sans';
-    font-style: normal;
-    src: local('PT Sans'), local('PTSans-Regular'), url('../fonts/PTSans400.woff') format('woff');
+  font-display: swap;
+  font-family: 'PT Sans';
+  font-style: normal;
+  src: local('PT Sans'), local('PTSans-Regular'), url('../fonts/PTSans400.woff') format('woff');
 }

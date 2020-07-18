@@ -13,7 +13,7 @@
 
   &__years {
     color: #ddd;
-    margin: 0px;
+    margin: 0;
     text-align: center;
     width: 100%;
   }
@@ -38,6 +38,7 @@
       display: block;
       height: 1.5rem;
       width: 1.5rem;
+
       path {
         fill: #fff;
         transition: 0.1s fill ease;

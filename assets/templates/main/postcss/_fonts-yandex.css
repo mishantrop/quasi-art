@@ -1,44 +1,44 @@
 @font-face {
-    font-display: swap;
-    font-family: 'YandexSansTextWeb';
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/yandex/CYblzLEXzCqQIvrYs7QKQe2omRk.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'YandexSansTextWeb';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/yandex/CYblzLEXzCqQIvrYs7QKQe2omRk.woff2') format('woff2');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'YandexSansTextWeb';
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/yandex/z3MYElcut0R2MF_Iw1RDNrstgYs.woff2') format('woff2'),
+  font-display: swap;
+  font-family: 'YandexSansTextWeb';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/yandex/z3MYElcut0R2MF_Iw1RDNrstgYs.woff2') format('woff2'),
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'YandexSansTextWeb';
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/yandex/lGQcYklLVV0hyvz1HFmFsUTj8_0.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'YandexSansTextWeb';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/yandex/lGQcYklLVV0hyvz1HFmFsUTj8_0.woff2') format('woff2');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Yandex Sans Display Web';
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/yandex/sUYVCPUAQE7ExrvMS7FoISoO83s.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Yandex Sans Display Web';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/yandex/sUYVCPUAQE7ExrvMS7FoISoO83s.woff2') format('woff2');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Yandex Sans Display Web';
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/yandex/LGiRvlfqQHlWR9YKLhsw5e7KGNA.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Yandex Sans Display Web';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/yandex/LGiRvlfqQHlWR9YKLhsw5e7KGNA.woff2') format('woff2');
 }

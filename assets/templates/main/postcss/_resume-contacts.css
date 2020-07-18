@@ -7,23 +7,26 @@
       display: flex;
       padding: 5px 0;
 
-      &:hover, &:focus {
-        color: var(--second-color--hover);
-
-        svg {
-          path {
-            fill: var(--second-color--hover);
-          }
-        }
-      }
-
       & svg {
         display: block;
         height: 20px;
         margin: 0 5px 0 0;
         width: 20px;
+
         & path {
           fill: #222;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        color: var(--second-color--hover);
+        text-decoration: none;
+
+        svg {
+          path {
+            fill: var(--second-color--hover);
+          }
         }
       }
     }

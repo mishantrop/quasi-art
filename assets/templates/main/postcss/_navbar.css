@@ -1,15 +1,15 @@
 .nav-item {}
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .active>.nav-link:hover {
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link:hover {
   color: var(--second-color--hover);
+
   svg {
     path {
       fill: var(--second-color);
     }
   }
 }
-
-/* Менюшка, её по умолчанию нужно скрывать для мобильников, чтобы страница не скакала */
 
 .navbar {
   border: 0;
@@ -53,6 +53,7 @@
     @media (--tablet) {
       display: block;
     }
+
     & .nav-item {
       float: left;
       font-size: 1.2rem;
@@ -69,6 +70,7 @@
       &:last-child {
         & .nav-link {
           padding-right: 0;
+
           @media (--tablet) {
             padding-right: 0.5rem;
           }
@@ -84,6 +86,7 @@
         }
       }
     }
+
     & .nav-link {
       align-items: center;
       color: #222;
@@ -99,13 +102,17 @@
         height: 18px;
         margin: 0 5px 0 0;
         width: 18px;
+
         path {
           fill: inherit;
           display: block;
         }
       }
-      &:focus, &:hover {
+
+      &:focus,
+      &:hover {
         color: var(--second-color--hover);
+
         svg {
           path {
             fill: var(--second-color);
@@ -114,6 +121,7 @@
       }
     }
   }
+
   .navbar-toggler {
     align-items: center;
     background-color: #fff;
@@ -154,14 +162,16 @@
       height: 20px;
       margin: 0 10px 0 0;
       width: 20px;
+
       @media (--tablet) {
         margin: 0;
       }
+
       svg {
         height: 20px;
         width: 20px;
       }
-      &--closed {}
+
       &--opened {
         display: none;
       }
@@ -183,7 +193,9 @@
   .navbar-toggleable-xs {
     margin-top: 1rem;
   }
-  .navbar-nav .nav-item, .navbar-nav .nav-item+.nav-item {
+
+  .navbar-nav .nav-item,
+  .navbar-nav .nav-item + .nav-item {
     display: block;
     float: none;
     margin-left: 0;

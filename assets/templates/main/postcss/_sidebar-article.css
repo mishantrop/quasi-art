@@ -13,16 +13,17 @@
   display: flex;
   overflow: hidden;
   vertical-align: top;
+
   &__image {
     display: block;
     height: 50px;
     margin: 0 10px 0 0;
     width: 50px;
   }
+
   &__time {
     color: #666;
     display: none;
     font-size: 0.8rem;
   }
-  &__title {}
 }

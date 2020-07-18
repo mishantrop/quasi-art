@@ -6,13 +6,14 @@
 }
 
 .article {
-  a {
+  /* a {
     color: var(--second-color);
+
     &:hover {
       color: var(--second-color--hover);
       text-decoration: none;
     }
-  }
+  } */
 
   &__header {
     margin: 0 0 2rem;
@@ -22,7 +23,7 @@
     display: block;
 
     @media print {
-        display: none;
+      display: none;
     }
   }
 
@@ -36,7 +37,9 @@
       text-underline-position: under;
 
       &:hover {
-        color: var(--main-color);
+        /* color: var(--main-color); */
+        color: var(--second-color--hover);
+        text-decoration: none;
       }
     }
 
@@ -55,6 +58,7 @@
       margin-left: 30px;
       max-width: 400px;
       padding: 5px;
+      quotes: '\00ab' '\00bb';
       text-align: right;
 
       strong {
@@ -122,11 +126,14 @@
       padding: 0 0 0 2rem;
     }
 
-    li>ul {
+    li > ul {
       margin-left: 20px;
     }
 
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
       font-weight: normal;
     }
 
@@ -214,7 +221,7 @@
     var {
       background-color: var(--main-color);
       color: #fff;
-      font-family: monospace, monospace;
+      font-family: monospace;
       font-size: 1em;
       font-style: normal;
       padding: 2px;
@@ -249,32 +256,32 @@
   }
 
   &-time {
-      clear: both;
-      color: #666;
-      display: block;
-      line-height: 2em;
-      min-height: 2em;
+    clear: both;
+    color: #666;
+    display: block;
+    line-height: 2em;
+    min-height: 2em;
 
-      svg {
-          display: inline-block;
-          margin: 0 5px 0 0;
-          width: 18px;
-          height: 18px;
+    svg {
+      display: inline-block;
+      margin: 0 5px 0 0;
+      width: 18px;
+      height: 18px;
 
-          path {
-              fill: #666;
-          }
+      path {
+        fill: #666;
       }
+    }
   }
 
-  ul, ol {
+  ul,
+  ol {
     li {
       margin: 0 0 1rem 0;
     }
   }
 }
 
-blockquote,
 cite,
 q {
   quotes: '\00ab' '\00bb';

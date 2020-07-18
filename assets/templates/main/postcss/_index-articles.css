@@ -31,7 +31,7 @@
   &__more {
     background-color: #fff;
     border-color: #ccc;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     border: 1px solid #666;
     color: var(--main-color);
     display: inline-block;

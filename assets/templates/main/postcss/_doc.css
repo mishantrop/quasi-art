@@ -2,6 +2,7 @@
   max-width: 800px;
   padding: 8px 8px 8px 24px;
   font-size: 1rem;
+
   p {
     margin: 8px 0;
   }
@@ -23,9 +24,11 @@
   margin: 1rem 0;
   padding: 1rem;
   text-align: center;
+
   img {
     max-width: 100%;
   }
+
   div {
     font-size: 1rem;
     padding: 1rem 0 0;

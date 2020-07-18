@@ -1,28 +1,28 @@
 .tags-list {
-    clear: both;
-    display: block;
-    line-height: 1.25rem;
-    min-height: 36px;
-    padding: 10px 0;
+  clear: both;
+  display: block;
+  line-height: 1.25rem;
+  min-height: 36px;
+  padding: 10px 0;
 
-    &__link {
-        color: #000;
-        line-height: 1.75rem;
-        margin: 0 1rem 0 0;
+  &__link {
+    color: #000;
+    line-height: 1.75rem;
+    margin: 0 1rem 0 0;
 
-        &--active {
-            color: var(--main-color--hover);
-        }
-
-        svg {
-            display: inline-block;
-            margin: 0 5px 0 0;
-            width: 18px;
-            height: 18px;
-
-            path {
-                fill: #666;
-            }
-        }
+    &--active {
+      color: var(--main-color--hover);
     }
+
+    svg {
+      display: inline-block;
+      height: 18px;
+      margin: 0 5px 0 0;
+      width: 18px;
+
+      path {
+        fill: #666;
+      }
+    }
+  }
 }

@@ -1,23 +1,19 @@
-/**
- * Слайдер на главной
- */
 .index-slider {
-    height: auto;
-    @media print {
-        display: none;
+  height: auto;
+
+  @media print {
+    display: none;
+  }
+
+  & .row {
+    margin: 0 auto;
+    padding: 60px 30px;
+
+    @media (--tablet) {
+      padding: 20px 0;
     }
+  }
 
-    & .row {
-      margin: 0px auto;
-      padding: 60px 30px;
-
-      @media (--tablet) {
-        padding: 20px 0;
-      }
-    }
-}
-
-.index-slider {
   .service-title {
     display: block;
     font-size: 3rem;
@@ -39,14 +35,16 @@
     line-height: 1.5;
 
     a {
-        color: #fff;
+      color: #fff;
     }
 
     ul {
       display: block;
+
       li {
         font-size: 1.5rem;
         margin-left: 24px;
+
         @media (--tablet) {
           font-size: 1.2rem;
         }
