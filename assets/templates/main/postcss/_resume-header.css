@@ -61,6 +61,34 @@
         filter: blur(2px);
       }
     }
+
+    &--2 {
+      background-image: url('../images/resume-web-developer-2.jpg');
+
+      @media (--tablet) {
+        background-image: url('../images/resume-web-developer-2--tablet.jpg');
+        filter: blur(2px);
+      }
+
+      @media (--mobile) {
+        background-image: url('../images/resume-web-developer-2--mobile.jpg');
+        filter: blur(2px);
+      }
+    }
+
+    &--3 {
+      background-image: url('../images/resume-web-developer-3.jpg');
+
+      @media (--tablet) {
+        background-image: url('../images/resume-web-developer-3--tablet.jpg');
+        filter: blur(2px);
+      }
+
+      @media (--mobile) {
+        background-image: url('../images/resume-web-developer-3--mobile.jpg');
+        filter: blur(2px);
+      }
+    }
   }
 
   &-info {
