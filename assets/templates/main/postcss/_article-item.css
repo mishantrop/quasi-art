@@ -5,23 +5,6 @@
     overflow: hidden;
     text-decoration: none;
 
-    &:hover {
-      color: var(--main-color--hover);
-      text-decoration: none;
-
-      .article-item-image {
-        opacity: 0.9;
-      }
-
-      .article-item-title {
-        color: var(--second-color);
-      }
-
-      .article-item-description {
-        text-decoration: none;
-      }
-    }
-
     &-description {
       text-decoration: none;
     }
@@ -69,6 +52,23 @@
       line-height: 1em;
       margin-top: 0;
       margin-bottom: 0.4em;
+    }
+
+    &:hover {
+      color: var(--main-color--hover);
+      text-decoration: none;
+
+      .article-item-image {
+        opacity: 0.9;
+      }
+
+      .article-item-title {
+        color: var(--second-color);
+      }
+
+      .article-item-description {
+        text-decoration: none;
+      }
     }
 
     @media (--tablet) {
