@@ -1,0 +1,14 @@
+{
+    "name": "mishantrop/quasi-art.ru",
+    "description": "Resube and Blog of Fullstack Web Developer",
+    "type": "project",
+    "require": {
+        "modx/revolution": "2.7.3"
+    },
+    "authors": [
+        {
+            "name": "mishantrop",
+            "email": "quasi-art@ya.ru"
+        }
+    ]
+}
