@@ -28,6 +28,7 @@ const taskLintCSS = () => {
   return gulp
     .src(templateMainPath + 'postcss/*.css')
     .pipe(gulpStylelint({
+      failAfterError: false,
       reporters: [
         {
           formatter: 'string',
