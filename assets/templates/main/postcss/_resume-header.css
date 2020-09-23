@@ -1,3 +1,15 @@
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+
+  &--name-cat {
+    background-image: url('/data/images/smileys/cat.png');
+  }
+}
+
 .resume-header {
   align-items: center;
   background-color: var(--main-color);
@@ -99,7 +111,7 @@
     width: 60%;
     z-index: 1;
 
-    & span {
+    &__intro {
       display: block;
       max-width: 500px;
 
@@ -220,6 +232,7 @@
 
         & path {
           fill: #fff;
+          transition: fill 0.2s ease;
         }
       }
 

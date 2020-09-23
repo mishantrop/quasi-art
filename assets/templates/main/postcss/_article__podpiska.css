@@ -1,3 +1,20 @@
+@keyframes pulse--white {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    transform: scale(0.90);
+  }
+  
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    transform: scale(1);
+  }
+  
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    transform: scale(0.90);
+  }
+}
+
 .article__podpiska {
   align-items: center;
   display: flex;
@@ -13,8 +30,12 @@
     color: #fff;
 
     svg {
+      animation: pulse--white 1s infinite;
+      border-radius: 50%;
       height: 36px;
       margin: 0 20px 0 0;
+      overflow: visible;
+      transform: scale(1);
       width: 36px;
 
       path {
