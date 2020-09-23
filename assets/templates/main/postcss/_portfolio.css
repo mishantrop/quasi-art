@@ -85,8 +85,8 @@
     width: 100%;
 
     &::after {
+      background-image: inherit;
       background-size: cover;
-      background: inherit;
       bottom: 0;
       content: '';
       left: 0;

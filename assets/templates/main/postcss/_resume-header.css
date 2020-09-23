@@ -219,8 +219,8 @@
     display: flex;
 
     &__link {
-      color: var(--main-color);
       align-items: center;
+      color: var(--main-color);
       display: flex;
       padding: 5px 0;
 

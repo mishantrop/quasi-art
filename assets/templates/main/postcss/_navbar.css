@@ -1,5 +1,3 @@
-.nav-item {}
-
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .active > .nav-link:hover {
   color: var(--second-color--hover);
@@ -183,10 +181,6 @@
       }
     }
   }
-}
-
-#nav-toggle {
-  &.active {}
 }
 
 @media (--tablet) {

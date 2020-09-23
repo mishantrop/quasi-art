@@ -45,8 +45,8 @@
   }
 
   &__submit {
-    border: 0;
     background-color: transparent;
+    border: 0;
     color: var(--main-color);
     cursor: pointer;
     line-height: 2.3125rem;

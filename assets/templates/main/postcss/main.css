@@ -20,7 +20,6 @@
 @import '_pagination.css';
 @import '_portfolio.css';
 @import '_quasiform.css';
-@import '_quasiform.css';
 @import '_resume.css';
 @import '_search.css';
 @import '_sidebar-article.css';
@@ -144,31 +143,27 @@ a {
   color: #222;
   display: block;
 }
-/*  */
+
 .data_table {
   line-height: 20px;
   padding: 0;
   border-collapse: collapse;
   font-size: 1rem;
+
+  & td {
+    border: 0 solid #222;
+    padding: 10px;
+    vertical-align: top;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
 }
-
-.data_table td {
-  border: 0 solid #222;
-  padding: 10px;
-  vertical-align: top;
-}
-
-.data_table td:first-child {
-  text-align: left;
-}
-
-
 
 ul.none {
   list-style: none;
 }
-
-
 
 .qu_title {
   font-weight: bold;
@@ -186,10 +181,12 @@ ul.none {
   margin: 4px;
 }
 
-ul.book_index_mini > li {
-  padding: 8px;
-  line-height: 18px;
-  list-style-type: none;
+ul.book_index_mini {
+  & > li {
+    line-height: 18px;
+    list-style-type: none;
+    padding: 8px;
+  }
 }
 
 ul.book_index_mini > li > a {

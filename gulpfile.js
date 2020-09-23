@@ -1,28 +1,42 @@
 const gulp = require('gulp');
-// const autoprefixer = require('autoprefixer');
 const cssnano = require('gulp-cssnano');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
-// const sourcemaps = require('gulp-sourcemaps');
+const gulpStylelint = require('gulp-stylelint');
 
 const templateMainPath = 'assets/templates/main/';
 const distMainPath = 'assets/templates/main/dist/';
 
-gulp.task('postcss-main', function() {
-  return gulp.src(templateMainPath + 'postcss/main.css')
+const taskPostcss = () => {
+  return gulp
+    .src(templateMainPath + 'postcss/main.css')
     .pipe(postcss())
     .pipe(rename('main.min.css'))
     .pipe(cssnano())
     .pipe(gulp.dest(distMainPath));
-});
+};
 
-gulp.task('serve', [ 'postcss-main' ], function() {
-  gulp.watch(templateMainPath + 'postcss/*.css', [ 'postcss-main' ]);
-});
+const taskServe = () => {
+  gulp.watch(templateMainPath + 'postcss/*.css', taskPostcss);
+};
 
-gulp.task('watch-main', [ 'postcss-main' ], function() {
-  gulp.watch(templateMainPath + 'postcss/*.css', [ 'postcss-main' ]);
-});
+const taskWatch = () => {
+  gulp.watch(templateMainPath + 'postcss/*.css', taskPostcss);
+};
 
-gulp.task('default', [ 'serve' ]);
-gulp.task('watch', [ 'watch-main' ]);
+const taskLintCSS = () => {
+  return gulp
+    .src(templateMainPath + 'postcss/*.css')
+    .pipe(gulpStylelint({
+      reporters: [
+        {
+          formatter: 'string',
+          console: true,
+        },
+      ],
+    }));
+};
+
+gulp.task('default', taskServe);
+gulp.task('watch', taskWatch);
+gulp.task('lint:css', taskLintCSS);
