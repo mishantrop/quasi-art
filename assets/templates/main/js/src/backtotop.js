@@ -1,33 +1,33 @@
-import scrollToElement from 'scroll-to-element';
+import scrollToElement from 'scroll-to-element'
 
 export const initBackToTopScroll = () => {
-  const backToTopSelector = '.back-to-top';
-  const backToTopClassActive = 'back-to-top--active';
-  const scrollTrigger = 300;
-  const backToTop = document.querySelector(backToTopSelector);
+  const backToTopSelector = '.back-to-top'
+  const backToTopClassActive = 'back-to-top--active'
+  const scrollTrigger = 300
+  const backToTop = document.querySelector(backToTopSelector)
   if (backToTop) {
     if (window.scrollY > scrollTrigger) {
-      backToTop.classList.add(backToTopClassActive);
+      backToTop.classList.add(backToTopClassActive)
     } else {
-      backToTop.classList.remove(backToTopClassActive);
+      backToTop.classList.remove(backToTopClassActive)
     }
     window.addEventListener('scroll', () => {
       if (window.scrollY > scrollTrigger) {
-        backToTop.classList.add(backToTopClassActive);
+        backToTop.classList.add(backToTopClassActive)
       } else {
-        backToTop.classList.remove(backToTopClassActive);
+        backToTop.classList.remove(backToTopClassActive)
       }
-    });
-    const targetSelector = '.navbar';
-    const el = document.querySelector(targetSelector) || false;
+    })
+    const targetSelector = '.navbar'
+    const el = document.querySelector(targetSelector) || false
     if (el) {
       backToTop.addEventListener('click', () => {
-        scrollToElement(targetSelector);
-      });
+        scrollToElement(targetSelector)
+      })
     } else {
-      console.log('target not found: ', targetSelector);
+      console.log('target not found: ', targetSelector)
     }
   } else {
-    console.log('backToTop not found');
+    console.log('backToTop not found')
   }
-};
+}

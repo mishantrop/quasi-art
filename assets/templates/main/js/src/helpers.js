@@ -1,21 +1,21 @@
 export const getWindowWidth = () => {
-  const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream
 
-  return iOS ? screen.width : window.innerWidth;
-};
+  return iOS ? screen.width : window.innerWidth
+}
 
 export const isObject = (variable) => {
-  return typeof variable === 'object' && variable !== null;
-};
+  return typeof variable === 'object' && variable !== null
+}
 
 export const isMobile = () => {
-  return (window.innerWidth < 576);
-};
+  return (window.innerWidth < 576)
+}
 
 export const isTablet = () => {
-  return (window.innerWidth < 993);
-};
+  return (window.innerWidth < 993)
+}
 
 export const isWide = () => {
-  return (window.innerWidth >= 1500);
-};
+  return (window.innerWidth >= 1500)
+}

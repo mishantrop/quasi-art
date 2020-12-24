@@ -12,6 +12,6 @@ module.exports = {
     'array-bracket-spacing': [ 'error', 'always' ],
     'comma-dangle': [ 'error', 'always-multiline' ],
     'space-before-function-paren': [ 'error', 'never' ],
-    semi: [ 'error', 'always' ],
+    semi: [ 1, 'never' ],
   },
 };

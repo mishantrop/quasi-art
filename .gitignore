@@ -1,5 +1,4 @@
 node_modules
-vendor
 .remote-sync.json
 backupdatabase.php
 config.core.php

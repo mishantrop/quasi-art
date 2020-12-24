@@ -1,98 +1,98 @@
-'use strict';
+import { quasiform } from '../vendor/quasiform' // eslint-disable-line no-unused-vars
 
-import Quasiform from 'quasiform'; // eslint-disable-line no-unused-vars
-import { initBackToTopScroll } from './backtotop';
-import { initLightbox } from './lightbox.js';
-import { sameHeight } from './sameheight';
-import { initResume } from './resume';
-import { getWindowWidth } from './helpers';
-import Navigation from './navigation';
+import { initBackToTopScroll } from './backtotop'
+import { initLightbox } from './lightbox.js'
+import { sameHeight } from './sameheight'
+import { initResume } from './resume'
+import { getWindowWidth } from './helpers'
+import Navigation from './navigation'
 
 const detectAdBlock = () => {
   if ('AdBlocking' in window) {
-    console.log('Никаких блокировщиков рекламы не установлено');
+    console.log('Никаких блокировщиков рекламы не установлено')
   } else {
-    console.log('Установлен блокировщик рекламы');
+    console.log('Установлен блокировщик рекламы')
   }
-};
+}
 
-window.windowInnerWidth = null;
+window.windowInnerWidth = null
 
 const init = () => {
-  detectAdBlock();
-  initResume();
-  initBackToTopScroll();
-  const navigation = new Navigation(); // eslint-disable-line no-unused-vars
+  detectAdBlock()
+  initResume()
+  initBackToTopScroll()
+  const navigation = new Navigation() // eslint-disable-line no-unused-vars
 
-  sameHeight('.article-item');
+  sameHeight('.article-item')
   window.addEventListener('resize', () => {
-    const ww = getWindowWidth();
+    const ww = getWindowWidth()
     if (window.windowInnerWidth !== null && ww === window.windowInnerWidth) {
-      return false;
+      return false
     }
-    window.windowInnerWidth = ww;
-    sameHeight('.article-item');
-  });
+    window.windowInnerWidth = ww
+    sameHeight('.article-item')
+  })
 
-  const portfolioContainer = document.querySelector('.portfoilo-inner-item__images-wrapper') || false;
+  const portfolioContainer = document.querySelector('.portfoilo-inner-item__images-wrapper') || false
   if (portfolioContainer) {
     imagesLoaded(portfolioContainer, () => { // eslint-disable-line no-undef
-      sameHeight('.portfoilo-inner-item__images-wrapper figure');
+      sameHeight('.portfoilo-inner-item__images-wrapper figure')
       window.addEventListener('resize', () => {
-        const ww = getWindowWidth();
+        const ww = getWindowWidth()
         if (window.windowInnerWidth !== null && ww === window.windowInnerWidth) {
-          return false;
+          return false
         }
-        window.windowInnerWidth = ww;
-        sameHeight('.portfoilo-inner-item__images-wrapper figure');
-      });
-    });
+        window.windowInnerWidth = ww
+        sameHeight('.portfoilo-inner-item__images-wrapper figure')
+      })
+    })
   }
 
-  const boxesContainer = document.querySelector('.box-wrapper') || false;
+  const boxesContainer = document.querySelector('.box-wrapper') || false
   if (boxesContainer) {
     imagesLoaded(boxesContainer, () => { // eslint-disable-line no-undef
-      sameHeight('.box-item');
-      sameHeight('.box-item__info-title-link');
+      sameHeight('.box-item')
+      sameHeight('.box-item__info-title-link')
       window.addEventListener('resize', () => {
-        const ww = getWindowWidth();
+        const ww = getWindowWidth()
         if (window.windowInnerWidth !== null && ww === window.windowInnerWidth) {
-          return false;
+          return false
         }
-        window.windowInnerWidth = ww;
-        sameHeight('.box-item');
-        sameHeight('.box-item__info-title-link');
-      });
-    });
+        window.windowInnerWidth = ww
+        sameHeight('.box-item')
+        sameHeight('.box-item__info-title-link')
+      })
+    })
   }
 
   /**
    * Заголовки у блоков портфолио
    */
-  sameHeight('.portfolio-item__info-title');
+  sameHeight('.portfolio-item__info-title')
   window.addEventListener('resize', () => {
-    const ww = getWindowWidth();
+    const ww = getWindowWidth()
     if (window.windowInnerWidth !== null && ww === window.windowInnerWidth) {
-      return false;
+      return false
     }
-    window.windowInnerWidth = ww;
-    sameHeight('.portfolio-item__info-title');
-  });
+    window.windowInnerWidth = ww
+    sameHeight('.portfolio-item__info-title')
+  })
 
-  initLightbox();
+  initLightbox()
   if ('hljs' in window) {
-    hljs.initHighlightingOnLoad(); // eslint-disable-line no-undef
+    hljs.initHighlightingOnLoad() // eslint-disable-line no-undef
   }
 
   const optionsContactsForm = {
     hideFormOnSuccess: true,
     selector: '#contacts-form-wrapper',
-  };
-  const contactsForm = new Quasiform(optionsContactsForm); // eslint-disable-line no-unused-vars
-};
+  }
+  // eslint-disable-next-line new-cap
+  const contactsForm = new quasiform(optionsContactsForm) // eslint-disable-line no-unused-vars
+}
 
 if (document.readyState === 'complete' || document.readyState !== 'loading') {
-  init();
+  init()
 } else {
-  document.addEventListener('DOMContentLoaded', init);
+  document.addEventListener('DOMContentLoaded', init)
 }

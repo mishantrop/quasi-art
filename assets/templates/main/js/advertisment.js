@@ -1,1 +1,1 @@
-window.AdBlocking = false;
+window.AdBlocking = false
