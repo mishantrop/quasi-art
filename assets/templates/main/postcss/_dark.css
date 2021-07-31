@@ -1,8 +1,4 @@
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--dark-background);
-  }
-
   .article__content a:hover {
     color: #fff;
   }
@@ -21,10 +17,6 @@
 
   .portfolio-item:hover {
     box-shadow: unset;
-  }
-
-  .portfolio-item__more {
-    background-color: #fff;
   }
 
   .navbar-menu.in {
@@ -126,9 +118,9 @@
     color: #fff;
   }
 
-  ul.book_index_mini > li > a {
+  /* ul.book_index_mini > li > a {
     color: #ddd;
-  }
+  } */
 
   .related-articles {
     background-color: #444;

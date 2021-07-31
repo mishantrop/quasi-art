@@ -29,7 +29,7 @@
     background-color: #33a6dd;
     color: #fff;
 
-    svg {
+    & > svg {
       animation: pulse--white 1s infinite;
       border-radius: 50%;
       height: 36px;

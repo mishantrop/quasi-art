@@ -1,11 +1,11 @@
-const gulp = require('gulp');
-const cssnano = require('gulp-cssnano');
-const postcss = require('gulp-postcss');
+const gulp = require('gulp')
+const cssnano = require('gulp-cssnano')
+const postcss = require('gulp-postcss')
 const rename = require('gulp-rename')
-// const gulpStylelint = require('gulp-stylelint');
+const gulpStylelint = require('gulp-stylelint')
 
-const templateMainPath = 'assets/templates/main/';
-const distMainPath = 'assets/templates/main/dist/';
+const templateMainPath = 'assets/templates/main/'
+const distMainPath = 'assets/templates/main/dist/'
 
 const css = () => {
   return gulp
@@ -13,38 +13,27 @@ const css = () => {
     .pipe(postcss())
     .pipe(rename('main.min.css'))
     .pipe(cssnano())
-    .pipe(gulp.dest(distMainPath));
-};
-
-// const taskServe = () => {
-//   gulp.watch(templateMainPath + 'postcss/*.css', taskPostcss);
-// };
-
-// const taskWatch = () => {
-//   gulp.watch(templateMainPath + 'postcss/*.css', taskPostcss);
-// };
+    .pipe(gulp.dest(distMainPath))
+}
 
 const watch = () => {
-  gulp.watch(templateMainPath + 'postcss/**/*.css', css);
-};
+  gulp.watch(templateMainPath + 'postcss/**/*.css', css)
+}
 
-// const taskLintCSS = () => {
-//   return gulp
-//     .src(templateMainPath + 'postcss/*.css')
-//     .pipe(gulpStylelint({
-//       failAfterError: false,
-//       reporters: [
-//         {
-//           formatter: 'string',
-//           console: true,
-//         },
-//       ],
-//     }));
-// };
+const lint = () => {
+  return gulp
+    .src(templateMainPath + 'postcss/*.css')
+    .pipe(gulpStylelint({
+      failAfterError: false,
+      reporters: [
+        {
+          formatter: 'string',
+          console: true,
+        },
+      ],
+    }))
+}
 
-// gulp.task('default', taskServe);
-// gulp.task('watch', taskWatch);
-// gulp.task('lint:css', taskLintCSS);
-
-gulp.task('default', watch);
-gulp.task('watch', watch);
+gulp.task('lint', lint)
+gulp.task('default', watch)
+gulp.task('watch', watch)

@@ -1,5 +1,3 @@
-import { quasiform } from '../vendor/quasiform' // eslint-disable-line no-unused-vars
-
 import { initBackToTopScroll } from './backtotop'
 import { initLightbox } from './lightbox.js'
 import { sameHeight } from './sameheight'
@@ -87,8 +85,9 @@ const init = () => {
     hideFormOnSuccess: true,
     selector: '#contacts-form-wrapper',
   }
-  // eslint-disable-next-line new-cap
-  const contactsForm = new quasiform(optionsContactsForm) // eslint-disable-line no-unused-vars
+
+  // eslint-disable-next-line no-unused-vars
+  const contactsForm = new window.quasiform.Quasiform(optionsContactsForm)
 }
 
 if (document.readyState === 'complete' || document.readyState !== 'loading') {

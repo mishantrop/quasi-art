@@ -11,6 +11,7 @@
 
 .sidebar-article {
   display: flex;
+  margin: 0 0 10px;
   overflow: hidden;
   vertical-align: top;
 
@@ -25,5 +26,24 @@
     color: #666;
     display: none;
     font-size: 0.8rem;
+  }
+
+  &__title {
+    color: #666;
+    /* display: none; */
+    font-size: 0.8rem;
+
+    @media (prefers-color-scheme: dark) {
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    color: #d36;
+    text-decoration: none;
+
+    .sidebar-article__title {
+      color: #d36;
+    }
   }
 }

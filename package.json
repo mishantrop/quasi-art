@@ -7,9 +7,10 @@
     "start": "npm run js",
     "analyse": "webpack --watch --progress --env ANALYZE=1",
     "js": "webpack --watch --progress",
+    "js:build": "webpack --progress",
     "lint:js": "./node_modules/.bin/eslint assets/templates/main/js/src/**",
     "css": "gulp watch",
-    "lint:css": "gulp lint:css"
+    "lint:css": "gulp lint"
   },
   "author": "quasi-art.ru",
   "devDependencies": {
@@ -65,8 +66,9 @@
   "dependencies": {
     "axios": "0.21.1",
     "fs": "0.0.1-security",
+    "gulp-stylelint": "^13.0.0",
     "luminous-lightbox": "2.3.3",
-    "quasiform": "2.1.2",
+    "quasiform": "3.0.3",
     "scroll-to-element": "2.0.3"
   },
   "husky": {
