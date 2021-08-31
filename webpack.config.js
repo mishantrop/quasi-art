@@ -1,52 +1,45 @@
-const path = require('path');
-const webpack = require('webpack');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const path = require('path')
+// const webpack = require('webpack')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+const SpeedMeasurePlugin = require('speed-measure-webpack-plugin')
 
-module.exports = env => {
+const smp = new SpeedMeasurePlugin()
+
+module.exports = (env) => {
   const config = {
-    entry: path.resolve(__dirname, 'assets/templates/main/js/src/index.js'),
+    entry: path.resolve(__dirname, 'assets/templates/main/js/src/index.ts'),
     target: [ 'web', 'es5' ],
     output: {
       path: path.resolve(__dirname, 'assets/templates/main/dist'),
       filename: 'main.min.js',
     },
+    resolve: {
+      extensions: [ '.js', '.ts' ],
+    },
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.(ts|js)$/,
           exclude: /node_modules/,
-          // exclude: /node_modules\/(?!quasiform)/,
           use: {
             loader: 'babel-loader',
-            options: {
-              presets: [
-                [ '@babel/preset-env', {
-                  useBuiltIns: 'usage',
-                  corejs: 3,
-                  targets: {
-                    browsers: '> 1%, IE 11, not dead',
-                  },
-                } ],
-              ],
-            },
           },
         },
       ],
     },
     plugins: [
-      new webpack.DefinePlugin({
-        'process.env.NODE_ENV': 'production',
-      }),
+      // new webpack.DefinePlugin({
+      //   'process.env.NODE_ENV': 'production',
+      // }),
+      ...env && env.ANALYZE === '1'
+        ? [ new BundleAnalyzerPlugin() ]
+        : [],
     ],
     stats: {
       colors: true,
     },
     devtool: 'source-map',
-  };
-
-  if (env && env.ANALYZE === '1') {
-    config.plugins.push(new BundleAnalyzerPlugin());
   }
 
-  return config;
-};
+  return smp.wrap(config)
+}

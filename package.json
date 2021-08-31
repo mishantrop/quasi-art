@@ -5,19 +5,33 @@
   "main": "index.php",
   "scripts": {
     "start": "npm run js",
-    "analyse": "webpack --watch --progress --env ANALYZE=1",
-    "js": "webpack --watch --progress",
-    "js:build": "webpack --progress",
+    "analyse": "webpack --watch --progress --env ANALYZE=1 --mode=development",
+    "js": "webpack --watch --progress --mode=development",
+    "js:build": "webpack --progress --mode=production",
     "lint:js": "./node_modules/.bin/eslint assets/templates/main/js/src/**",
     "css": "gulp watch",
     "lint:css": "gulp lint"
   },
   "author": "quasi-art.ru",
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "ie >= 11"
+  ],
   "devDependencies": {
-    "@babel/core": "7.12.10",
-    "@babel/preset-env": "7.12.11",
-    "autoprefixer": "10.1.0",
-    "babel-core": "6.26.3",
+    "@babel/core": "7.15.0",
+    "@babel/plugin-proposal-class-properties": "7.14.5",
+    "@babel/plugin-proposal-export-namespace-from": "7.14.5",
+    "@babel/plugin-proposal-optional-chaining": "7.14.5",
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
+    "@babel/preset-env": "7.15.0",
+    "@babel/preset-typescript": "7.15.0",
+    "@types/scroll-to-element": "2.0.1",
+    "@types/webpack-env": "1.16.2",
+    "@typescript-eslint/eslint-plugin": "4.29.3",
+    "@typescript-eslint/parser": "4.29.3",
+    "autoprefixer": "10.3.3",
+    "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-es2015-arrow-functions": "6.22.0",
@@ -25,9 +39,7 @@
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-stage-2": "6.24.1",
-    "browser-sync": "2.26.13",
-    "browser-sync-webpack-plugin": "2.3.0",
-    "core-js": "3.8.1",
+    "core-js": "^3.16.4",
     "eslint": "7.16.0",
     "eslint-config-standard": "16.0.2",
     "eslint-plugin-import": "2.22.1",
@@ -57,23 +69,25 @@
     "postcss-nesting": "7.0.1",
     "postcss-selector-matches": "4.0.0",
     "postcss-selector-not": "4.0.0",
+    "speed-measure-webpack-plugin": "^1.5.0",
     "stylelint": "13.8.0",
     "stylelint-config-recommended": "3.0.0",
-    "webpack": "5.11.0",
-    "webpack-bundle-analyzer": "4.3.0",
-    "webpack-cli": "4.2.0"
+    "ts-loader": "9.2.5",
+    "typescript": "4.4.2",
+    "webpack": "5.51.1",
+    "webpack-bundle-analyzer": "4.4.2",
+    "webpack-cli": "4.8.0"
   },
   "dependencies": {
     "axios": "0.21.1",
-    "fs": "0.0.1-security",
-    "gulp-stylelint": "^13.0.0",
-    "luminous-lightbox": "2.3.3",
+    "gulp-stylelint": "13.0.0",
+    "luminous-lightbox": "2.3.5",
     "quasiform": "3.0.3",
     "scroll-to-element": "2.0.3"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:js && npm run lint:css"
+      "pre-commit": "npm run lint:css"
     }
   }
 }
