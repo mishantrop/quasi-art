@@ -1,9 +1,10 @@
-// @ts-ignore
 import scrollToElement from 'scroll-to-element'
+
+import { superbutton } from './superbutton'
 
 export const initResume = () => {
   const buttonWrite = document.getElementById('resume-header__write')
-  if (buttonWrite === null) {
+  if (!buttonWrite) {
     return
   }
 
@@ -16,15 +17,5 @@ export const initResume = () => {
     }
   })
 
-  buttonWrite.addEventListener('mousemove', (event) => {
-    // @ts-ignore
-    const x = event.pageX - event.target.offsetLeft
-    // @ts-ignore
-    const y = event.pageY - event.target.offsetTop
-
-    // @ts-ignore
-    event.target.style.setProperty('--x', `${x}px`)
-    // @ts-ignore
-    event.target.style.setProperty('--y', `${y - 60}px`)
-  })
+  buttonWrite.addEventListener('mousemove', superbutton)
 }

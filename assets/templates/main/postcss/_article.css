@@ -6,15 +6,6 @@
 }
 
 .article {
-  /* a {
-    color: var(--second-color);
-
-    &:hover {
-      color: var(--second-color--hover);
-      text-decoration: none;
-    }
-  } */
-
   &__header {
     margin: 0 0 2rem;
   }
@@ -32,7 +23,7 @@
 
     a {
       color: var(--second-color);
-      text-decoration-skip: ink;
+      text-decoration-skip-ink: auto;
       text-decoration: underline;
       text-underline-position: under;
 

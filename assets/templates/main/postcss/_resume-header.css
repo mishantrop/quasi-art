@@ -14,25 +14,25 @@
   align-items: center;
   background-color: var(--main-color);
   display: flex;
-  height: 720px;
   justify-content: flex-end;
   overflow: hidden;
+  padding: 24px 0;
   position: relative;
 
-  @media (--notebook) {
-    height: 600px;
-  }
+  &__avatar {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+    transition: border-color 0.2s linear;
+    width: 200px;
 
-  @media (--desktop) {
-    height: 500px;
-  }
-
-  @media (--tablet) {
-    height: 400px;
-  }
-
-  @media (--mobile) {
-    height: auto;
+    &:hover {
+      border: 2px solid var(--second-color--hover);
+    }
   }
 
   &__bg {
@@ -45,75 +45,15 @@
     position: absolute;
     right: 0;
     top: 0;
-
-    &--0 {
-      background-image: url('../images/resume-web-developer-0.jpg');
-
-      @media (--tablet) {
-        background-image: url('../images/resume-web-developer-0--tablet.jpg');
-        filter: blur(2px);
-      }
-
-      @media (--mobile) {
-        background-image: url('../images/resume-web-developer-0--mobile.jpg');
-        filter: blur(2px);
-      }
-    }
-
-    &--1 {
-      background-image: url('../images/resume-web-developer-1.jpg');
-
-      @media (--tablet) {
-        background-image: url('../images/resume-web-developer-1--tablet.jpg');
-        filter: blur(2px);
-      }
-
-      @media (--mobile) {
-        background-image: url('../images/resume-web-developer-1--mobile.jpg');
-        filter: blur(2px);
-      }
-    }
-
-    &--2 {
-      background-image: url('../images/resume-web-developer-2.jpg');
-
-      @media (--tablet) {
-        background-image: url('../images/resume-web-developer-2--tablet.jpg');
-        filter: blur(2px);
-      }
-
-      @media (--mobile) {
-        background-image: url('../images/resume-web-developer-2--mobile.jpg');
-        filter: blur(2px);
-      }
-    }
-
-    &--3 {
-      background-image: url('../images/resume-web-developer-3.jpg');
-
-      @media (--tablet) {
-        background-image: url('../images/resume-web-developer-3--tablet.jpg');
-        filter: blur(2px);
-      }
-
-      @media (--mobile) {
-        background-image: url('../images/resume-web-developer-3--mobile.jpg');
-        filter: blur(2px);
-      }
-    }
   }
 
   &-info {
-    background-color: rgba(0, 0, 0, 0.45);
     color: #fff;
     font-size: 1.5rem;
-    padding: 2rem;
-    width: 60%;
-    z-index: 1;
+    line-height: 1.2;
 
     &__intro {
       display: block;
-      max-width: 500px;
 
       a {
         color: #ff99b7;
@@ -123,27 +63,21 @@
           text-decoration: none;
         }
       }
-    }
 
-    @media (--desktop) {
-      width: 65%;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     @media (--tablet) {
       font-size: 1.2rem;
-      width: 65%;
     }
 
     @media (--mobile) {
       font-size: 1rem;
       padding: 3rem 1rem;
       text-shadow: 1px 1px 2px #000;
-      width: 100%;
-    }
-
-    &-left {
-      display: block;
-      max-width: 500px;
     }
   }
 

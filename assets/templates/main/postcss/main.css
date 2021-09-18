@@ -1,23 +1,25 @@
 @charset 'UTF-8';
+
 @import '_variables.css';
 @import '_fonts-yandex.css';
 @import 'vendor/_lightbox.css';
 @import '_media.css';
+@import '_grid.css';
 @import '_article__podpiska.css';
 @import '_article-item.css';
 @import '_article.css';
 @import '_back-to-top.css';
-@import '_box.css';
 @import '_breadcrumbs.css';
+@import '_button.css';
 @import '_doc.css';
 @import '_footer.css';
 @import '_forms.css';
 @import '_header.css';
 @import '_index-articles.css';
+@import '_index-block.css';
 @import '_index-slider.css';
 @import '_inner-search.css';
 @import '_latest-modx-version.css';
-@import '_navbar.css';
 @import '_pagination.css';
 @import '_portfolio.css';
 @import '_quasiform.css';
@@ -25,12 +27,24 @@
 @import '_search.css';
 @import '_sidebar-article.css';
 @import '_tags.css';
+@import '_top-menu.css';
 @import '_topmenu-search-form.css';
 
 @import '_dark.css';
 
 html {
   font-size: 16px;
+}
+
+.page {
+  &-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  &-top {
+    padding: 0 0 55px 0;
+  }
 }
 
 body,
@@ -63,12 +77,7 @@ header {
   display: block;
 }
 
-article,
-div,
-li,
-nav,
-ol,
-ul {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;

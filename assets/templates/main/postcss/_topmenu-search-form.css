@@ -1,5 +1,6 @@
 .topmenu-search {
   overflow: hidden;
+  padding: 12px;
 
   @media (--desktop) {
     clear: both;
