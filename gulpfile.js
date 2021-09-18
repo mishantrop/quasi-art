@@ -37,3 +37,4 @@ const lint = () => {
 gulp.task('lint', lint)
 gulp.task('default', watch)
 gulp.task('watch', watch)
+gulp.task('build', css)

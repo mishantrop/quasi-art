@@ -1,59 +1,6 @@
 .index-articles {
-  background-color: #eee;
-  padding: 50px 0;
-
-  &__header {
-    color: var(--main-color);
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 1.5rem;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &-link {
-      color: var(--main-color);
-      text-decoration: none;
-
-      &:hover {
-        color: var(--main-color--hover);
-        text-decoration: none;
-      }
-    }
-  }
-
   &__items {
     margin-bottom: 24px;
     margin-top: 24px;
-  }
-
-  &__more {
-    background-color: #fff;
-    border-color: #ccc;
-    border-radius: 0.25rem;
-    border: 1px solid #666;
-    color: var(--main-color);
-    display: inline-block;
-    font-size: 1.2rem;
-    font-weight: normal;
-    margin: 2rem 0 0 0;
-    padding: 1rem 1rem;
-    text-align: center;
-    transition: background-color 0.2s linear;
-    user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-
-    &:hover {
-      border: 1px solid var(--second-color--hover);
-      color: var(--second-color--hover);
-      text-decoration: none;
-    }
-
-    &-wrapper {
-      padding: 1rem 0;
-      text-align: center;
-    }
   }
 }

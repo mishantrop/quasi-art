@@ -13,8 +13,8 @@ module.exports = () => ({
     require('postcss-mixins')(),
     require('postcss-nested')(),
     require('postcss-color-function')(),
-    require('postcss-selector-not')(),
+    // require('postcss-selector-not')(),
     require('postcss-flexbugs-fixes')(),
     require('autoprefixer')(),
   ],
-});
+})
