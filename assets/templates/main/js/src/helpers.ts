@@ -4,18 +4,14 @@ export const getWindowWidth = () => {
   return iOS ? screen.width : window.innerWidth
 }
 
-export const isObject = (variable: any) => {
+export const isObject = <T>(variable: T) => {
   return typeof variable === 'object' && variable !== null
 }
 
 export const isMobile = () => {
-  return (window.innerWidth < 576)
+  return window.innerWidth < 768
 }
 
-export const isTablet = () => {
-  return (window.innerWidth < 993)
-}
-
-export const isWide = () => {
-  return (window.innerWidth >= 1500)
+export const isDesktop = () => {
+  return window.innerWidth >= 1200
 }

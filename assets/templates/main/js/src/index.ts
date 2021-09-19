@@ -3,7 +3,7 @@ import { initLightbox } from './lightbox'
 import { sameHeight } from './sameheight'
 import { initResume } from './resume'
 import { getWindowWidth } from './helpers'
-import Navigation from './navigation'
+import { Navigation } from './navigation'
 
 const detectAdBlock = () => {
   if ('AdBlocking' in window) {
@@ -33,8 +33,9 @@ const sameHeightWithResize = (selector: string) => {
 const init = () => {
   detectAdBlock()
   initResume()
-  initBackToTopScroll()
-  const navigation = new Navigation() // eslint-disable-line no-unused-vars
+  initBackToTopScroll({ targetSelector: '.menu' })
+  const navigation = new Navigation()
+  navigation.init()
 
   // Главная страница / Работы портфолио
   sameHeightWithResize('.portfolio-item__info-title')

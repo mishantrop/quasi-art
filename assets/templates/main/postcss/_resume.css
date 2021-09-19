@@ -16,7 +16,7 @@
   &__sidebar {
     padding: 0 0 2rem 3rem;
 
-    @media (--tablet) {
+    @media (--mobile) {
       padding: 0 0 2rem 0;
     }
 

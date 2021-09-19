@@ -5,6 +5,10 @@
     overflow: hidden;
     text-decoration: none;
 
+    @media (--mobile) {
+      border-bottom: 1px solid var(--second-color);
+    }
+
     &-description {
       text-decoration: none;
     }
@@ -69,10 +73,6 @@
       .article-item-description {
         text-decoration: none;
       }
-    }
-
-    @media (--tablet) {
-      border-bottom: 1px solid var(--second-color);
     }
   }
 }
