@@ -1,7 +1,11 @@
 // @ts-ignore
 import scrollToElement from 'scroll-to-element'
 
-export const initBackToTopScroll = () => {
+export const initBackToTopScroll = ({
+  targetSelector,
+}: {
+  targetSelector: string;
+}) => {
   const backToTopSelector = '.back-to-top'
   const backToTopClassActive = 'back-to-top--active'
   const scrollTrigger = 300
@@ -19,7 +23,6 @@ export const initBackToTopScroll = () => {
         backToTop.classList.remove(backToTopClassActive)
       }
     })
-    const targetSelector = '.navbar'
     const el = document.querySelector(targetSelector) || false
     if (el) {
       backToTop.addEventListener('click', () => {

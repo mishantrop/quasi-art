@@ -7,33 +7,47 @@
   min-height: auto;
   position: relative;
 
-  @media (--tablet) {
+  /* @media (--mobile) {
     display: table-row;
-  }
+  } */
 
   @media print {
     display: none !important;
   }
 
-  &__nav {
+  &-nav {
     align-items: center;
     display: flex;
     flex-direction: row;
     list-style: none;
+    
+    @media (--mobile) {
+      display: none;
+    }
 
-    @media (--tablet) {
-      display: block;
+    &--opened {
+      @media (--mobile) {
+        background-color: #fff;
+        bottom: 0;
+        display: block;
+        left: 0;
+        padding: 0.5rem 2rem;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 4;
+      }
     }
   }
 
-  &__item {
+  &-item {
     font-size: 1.2rem;
 
     &:first-child {
       & .menu__item-link {
         padding-left: 0;
 
-        @media (--tablet) {
+        @media (--mobile) {
           padding-left: 0.5rem;
         }
       }
@@ -43,16 +57,16 @@
       & .menu__item-link {
         padding-right: 0;
 
-        @media (--tablet) {
+        @media (--mobile) {
           padding-right: 0.5rem;
         }
       }
     }
 
-    @media (--tablet) {
+    @media (--mobile) {
       display: block;
 
-      & .menu__item-link {
+      & .menu-item-link {
         padding-left: 0 !important;
       }
     }
@@ -92,33 +106,8 @@
       }
     }
   }
-}
 
-.menu {
-
-
-
-  &-menu {
-    @media (--tablet) {
-      display: none;
-
-      &.in {
-        @media (--tablet) {
-          background-color: #fff;
-          bottom: 0;
-          display: block;
-          left: 0;
-          padding: 0.5rem 2rem;
-          position: fixed;
-          right: 0;
-          top: 0;
-          z-index: 4;
-        }
-      }
-    }
-  }
-
-  .navbar-toggler {
+  &-toggler {
     align-items: center;
     background-color: #fff;
     background-image: none;
@@ -133,9 +122,9 @@
     transition: background-color 0.1s linear;
     width: 100%;
 
-    @media (--tablet) {
+    @media (--mobile) {
       display: table-cell;
-      margin: 20px 10px 20px 0;
+      margin: 10px 10px 10px 0;
       width: 38px;
     }
 
@@ -153,13 +142,13 @@
       width: auto;
     }
 
-    .navbar-icon {
+    .menu-icon {
       display: block;
       height: 20px;
       margin: 0 10px 0 0;
       width: 20px;
 
-      @media (--tablet) {
+      @media (--mobile) {
         margin: 0;
       }
 
@@ -174,7 +163,7 @@
     }
 
     span {
-      @media (--tablet) {
+      @media (--mobile) {
         display: none;
       }
     }

@@ -2,7 +2,7 @@
   max-width: 666px;
   overflow: hidden;
 
-  @media (--tablet) {
+  @media (--mobile) {
     clear: both;
     overflow: hidden;
   }
@@ -12,7 +12,7 @@
     border-left: 3px solid var(--main-color);
     position: relative;
 
-    @media (--tablet) {
+    @media (--mobile) {
       width: 100%;
     }
 

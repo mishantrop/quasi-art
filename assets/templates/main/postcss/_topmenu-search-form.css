@@ -9,9 +9,9 @@
     width: 100%;
   }
 
-  @media (--tablet) {
+  @media (--mobile) {
     display: table-cell;
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 0;
     vertical-align: middle;
   }

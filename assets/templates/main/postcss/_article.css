@@ -28,7 +28,6 @@
       text-underline-position: under;
 
       &:hover {
-        /* color: var(--main-color); */
         color: var(--second-color--hover);
         text-decoration: none;
       }
@@ -81,11 +80,15 @@
     &-figure {
       text-align: center;
 
+      a {
+        text-decoration: none;
+      }
+
       &--half {
         margin: 0 auto;
         max-width: 50%;
 
-        @media (--tablet) {
+        @media (--mobile) {
           max-width: 100%;
         }
       }
@@ -134,7 +137,7 @@
       letter-spacing: 1px;
       padding: 3rem 0;
 
-      @media (--tablet) {
+      @media (--mobile) {
         font-size: 2rem;
       }
     }
@@ -147,7 +150,7 @@
       padding: 3rem 0 1rem;
       word-break: break-word;
 
-      @media (--tablet) {
+      @media (--mobile) {
         font-size: 1.8rem;
       }
 
@@ -160,7 +163,7 @@
       color: var(--second-color);
       font-size: 1.8rem;
 
-      @media (--tablet) {
+      @media (--mobile) {
         font-size: 1.6rem;
       }
     }
@@ -169,7 +172,7 @@
       color: var(--second-color);
       font-size: 1.6rem;
 
-      @media (--tablet) {
+      @media (--mobile) {
         font-size: 1.4rem;
       }
     }
@@ -204,7 +207,7 @@
     table {
       max-width: 100%;
 
-      @media (--tablet) {
+      @media (--mobile) {
         width: 100%;
       }
     }
@@ -216,12 +219,6 @@
       font-size: 1em;
       font-style: normal;
       padding: 2px;
-    }
-  }
-
-  &-figure {
-    a {
-      text-decoration: none;
     }
   }
 
@@ -241,7 +238,7 @@
       font-size: 2rem;
     }
 
-    @media (--tablet) {
+    @media (--mobile) {
       font-size: 1.5rem;
     }
   }

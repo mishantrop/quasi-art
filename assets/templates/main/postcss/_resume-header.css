@@ -22,29 +22,45 @@
   &__avatar {
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid var(--main-color);
     border-radius: 50%;
     display: block;
     height: 200px;
-    margin: 0 auto;
-    transition: border-color 0.2s linear;
+    opacity: 0.8;
+    transition: opacity 0.2s linear;
     width: 200px;
 
     &:hover {
-      border: 2px solid var(--second-color--hover);
+      opacity: 1;
     }
-  }
 
-  &__bg {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: 0;
-    left: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    top: 0;
+    &--circle {
+      &-primary {
+        background: radial-gradient(
+          circle at 30% 107%,
+          var(--second-color) 0%,
+          var(--second-color) 5%,
+          var(--second-color) 45%,
+          var(--second-color) 60%,
+          var(--second-color--hover) 90%);
+        border-radius: 50%;
+        height: 216px;
+        margin: 0 24px 0 auto;
+        padding: 4px;
+        width: 216px;
+
+        @media (--mobile) {
+          margin: 0 auto;
+        }
+      }
+
+      &-secondary {
+        background-color: var(--main-color);
+        border-radius: 50%;
+        height: 208px;
+        padding: 4px;
+        width: 208px;
+      }
+    }
   }
 
   &-info {
@@ -52,8 +68,13 @@
     font-size: 1.5rem;
     line-height: 1.2;
 
+    @media (--mobile) {
+      padding: 1rem;
+    }
+
     &__intro {
       display: block;
+      max-width: 600px;
 
       a {
         color: #ff99b7;
@@ -68,16 +89,6 @@
         width: 24px;
         height: 24px;
       }
-    }
-
-    @media (--tablet) {
-      font-size: 1.2rem;
-    }
-
-    @media (--mobile) {
-      font-size: 1rem;
-      padding: 3rem 1rem;
-      text-shadow: 1px 1px 2px #000;
     }
   }
 
@@ -105,6 +116,7 @@
 
     &-wrapper {
       padding: 2rem 0;
+      display: flex;
     }
 
     span {
@@ -151,6 +163,7 @@
 
   &-links {
     display: flex;
+    padding: 0 0 0 1rem;
 
     &__link {
       align-items: center;

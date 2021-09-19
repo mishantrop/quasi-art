@@ -272,7 +272,7 @@ table.table-bordered td {
   }
 }
 
-@media (--tablet-up) {
+@media (--mobile-up) {
   .hidden-md-up {
     display: none !important;
   }
@@ -282,7 +282,7 @@ table.table-bordered td {
     display: none!important;
   }
 }
-@media (--tablet) {
+@media (--mobile) {
   .hidden-xs-down {
     display: none !important;
   }

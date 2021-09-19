@@ -1,5 +1,11 @@
+.portfolio-related {
+  position: sticky;
+  top: 0;
+}
+
 .portfolio-item {
   box-shadow: #ccc 2px 2px 8px 2px;
+  display: block;
   margin: 0 0 2rem;
 
   &__link {
@@ -9,8 +15,6 @@
     overflow: hidden;
     padding: 0;
     text-decoration: none;
-
-    overflow: hidden;
 
     &:hover {
       box-shadow: #ccc 2px 2px 8px 4px;
@@ -39,6 +43,7 @@
 
     &::after {
       background-image: inherit;
+      background-position: 50%;
       background-size: cover;
       bottom: 0;
       content: '';

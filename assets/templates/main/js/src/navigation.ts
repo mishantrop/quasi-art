@@ -1,90 +1,75 @@
-import { isTablet } from './helpers'
+import { isMobile } from './helpers'
 
 interface State {
-  isOpenedMobile?: boolean;
+  isOpened: boolean;
+  isMobile: boolean;
 }
 
-export default class Navigation {
+export class Navigation {
   state: State
-  menuToggler: any
-  iconClosed: any
-  iconOpened: any
-  navToggle: any
-  navbarToggler: any
-  navbarTogglerIcon: any
-  exCollapsingNavbar2: HTMLElement
+  menuNav: HTMLDivElement
+  menuToggler: HTMLDivElement
+  iconClosed: HTMLDivElement
+  iconOpened: HTMLDivElement
+  navbarTogglerIcon: HTMLElement
 
-  constructor() {
-    this.state = {
-      isOpenedMobile: !this.isMobileNavigation(),
-    }
-
-    this.menuToggler = document.querySelector('#nav-toggle')
-    this.iconClosed = document.querySelector('.navbar-icon--closed')
-    this.iconOpened = document.querySelector('.navbar-icon--opened')
-    this.navToggle = document.querySelector('#nav-toggle')
-    this.navbarToggler = document.querySelector('.navbar-toggler')
-    this.navbarTogglerIcon = this.navbarToggler.querySelector('i')
-    this.exCollapsingNavbar2 = document.getElementById('exCollapsingNavbar2')
-
-    this.init()
-  }
-
-  setState(patch: State) {
-    this.state = Object.assign(this.state, patch)
+  setState(patch: Partial<State>) {
+    this.state = { ...this.state, ...patch }
     this.render()
   }
 
   init() {
-    if (this.menuToggler && this.exCollapsingNavbar2) {
-      if (this.menuToggler.style.display !== 'none') {
-        this.exCollapsingNavbar2.classList.remove('in')
-      }
+    this.state = {
+      isOpened: false,
+      isMobile: this.isMobileScreen(),
     }
 
-    if (this.navToggle) {
-      this.navToggle.addEventListener('click', (e: Event) => {
-        const { isOpenedMobile } = this.state
-        this.setState({ isOpenedMobile: !isOpenedMobile })
-        e.preventDefault()
-      })
-    }
+    this.menuNav = document.querySelector('.menu-nav')
+    this.menuToggler = document.querySelector('#menu-toggler')
+    this.iconClosed = document.querySelector('.menu-icon--closed')
+    this.iconOpened = document.querySelector('.menu-icon--opened')
+    this.navbarTogglerIcon = this.menuToggler.querySelector('i')
 
-    window.addEventListener('resize', () => {
-      /**
-       * Если из мобилы перешли в десктоп, то нужно развернуть менюшку
-       */
-      const { isOpenedMobile } = this.state
-      this.setState({
-        isOpenedMobile: isOpenedMobile === this.isMobileNavigation(),
-      })
+    this.menuToggler.addEventListener('click', () => {
+      const { isOpened } = this.state
+      this.setState({ isOpened: !isOpened })
     })
 
     this.render()
+
+    window.addEventListener('resize', () => {
+      const isMobileScreen = this.isMobileScreen()
+      this.setState({
+        isMobile: isMobileScreen,
+        isOpened: isMobileScreen ? false : this.state.isOpened
+      })
+      this.render()
+    })
   }
 
-  isMobileNavigation() {
-    return isTablet()
+  isMobileScreen() {
+    return isMobile()
   }
 
   render() {
-    const { isOpenedMobile } = this.state
+    const { isOpened, isMobile } = this.state
 
-    if (!isOpenedMobile && this.isMobileNavigation()) {
-      this.navToggle.classList.remove('active')
-      this.iconClosed.style.display = 'block'
-      this.iconOpened.style.display = 'none'
-      this.exCollapsingNavbar2.classList.remove('in')
-      document.querySelector('body').style.overflow = 'unset'
+    if (isOpened && isMobile) {
+      document.querySelector('body').style.overflow = 'hidden'
     } else {
-      this.navToggle.classList.add('active')
+      document.querySelector('body').style.overflow = 'unset'
+    }
+
+    if (isOpened) {
+      this.menuNav.classList.add('menu-nav--opened')
+      this.menuToggler.classList.add('active')
       this.iconClosed.style.display = 'none'
       this.iconOpened.style.display = 'block'
-      this.exCollapsingNavbar2.classList.add('in')
-
-      if (this.isMobileNavigation()) {
-        document.querySelector('body').style.overflow = 'hidden'
-      }
+    } else {
+      this.menuNav.classList.remove('menu-nav--opened')
+      this.menuToggler.classList.remove('active')
+      this.iconClosed.style.display = 'block'
+      this.iconOpened.style.display = 'none'
     }
   }
 }
