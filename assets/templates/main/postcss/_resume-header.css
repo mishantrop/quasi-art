@@ -109,7 +109,6 @@
     position: relative;
     text-align: center;
     text-decoration: none;
-    text-shadow: none;
     transition: background-color 0.2s linear, color 0.2s linear;
     user-select: none;
     vertical-align: middle;

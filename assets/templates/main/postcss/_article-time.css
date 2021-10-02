@@ -1,0 +1,16 @@
+.article-time {
+  color: #666;
+  display: block;
+  margin: 8px 0 0;
+
+  svg {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    width: 18px;
+    height: 18px;
+
+    path {
+      fill: #666;
+    }
+  }
+}

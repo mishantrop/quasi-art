@@ -1,10 +1,8 @@
 .article-tags {
-  clear: both;
   color: #666;
   display: flex;
   flex-wrap: wrap;
-  line-height: 1.25rem;
-  padding: 0;
+  margin: 8px 0 0;
 
   a {
     color: #000;

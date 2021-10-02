@@ -15,6 +15,10 @@
     display: none !important;
   }
 
+  &-container {
+    border-bottom: 1px solid #666;
+  }
+
   &-nav {
     align-items: center;
     display: flex;
@@ -83,6 +87,10 @@
         padding: 0.5rem;
       }
 
+      @media (prefers-color-scheme: dark) {
+        color: #fff;
+      }
+
       svg {
         height: 18px;
         margin: 0 5px 0 0;
@@ -91,6 +99,10 @@
         path {
           fill: inherit;
           display: block;
+
+          @media (prefers-color-scheme: dark) {
+            fill: #fff;
+          }
         }
       }
 

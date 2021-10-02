@@ -2,33 +2,5 @@
 @import '_resume-header.css';
 
 .resume {
-  &__title {
-    color: var(--main-color);
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 1.5;
-    margin: 0;
-    padding: 2rem 0;
-    text-align: left;
-    text-transform: uppercase;
-  }
 
-  &__sidebar {
-    padding: 0 0 2rem 3rem;
-
-    @media (--mobile) {
-      padding: 0 0 2rem 0;
-    }
-
-    &-title {
-      color: var(--main-color);
-      font-size: 1.5rem;
-      font-weight: bold;
-      line-height: 1.5;
-      margin: 0;
-      padding: 2rem 0;
-      text-align: center;
-      text-transform: uppercase;
-    }
-  }
 }

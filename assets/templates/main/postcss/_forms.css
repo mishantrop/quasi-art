@@ -9,7 +9,6 @@ input {
   }
 }
 
-
 .form-control {
   display: block;
   width: 100%;
@@ -100,7 +99,15 @@ select.form-control-lg:not([size]):not([multiple]) {
 }
 
 .form-group {
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
+
+  & > label {
+    color: #222;
+
+    @media (prefers-color-scheme: dark) {
+      color: #ddd;
+    }
+  }
 }
 
 .form-text {

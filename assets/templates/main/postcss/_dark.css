@@ -1,8 +1,4 @@
 @media (prefers-color-scheme: dark) {
-  .article__content a:hover {
-    color: #fff;
-  }
-
   .portfolio-category__wrapper {
     background-color: var(--dark-background);
   }
@@ -11,28 +7,8 @@
     color: #fff;
   }
 
-  .portfolio-item {
-    box-shadow: unset;
-  }
-
-  .portfolio-item:hover {
-    box-shadow: unset;
-  }
-
   .navbar-menu.in {
     background-color: var(--dark-background);
-  }
-
-  .navbar .navbar-nav .nav-link {
-    color: #fff;
-  }
-
-  .navbar .navbar-nav .nav-link svg path {
-    fill: #fff;
-  }
-
-  .article__content p {
-    color: var(--dark-text);
   }
 
   .article ol li,
@@ -44,19 +20,11 @@
     background-color: #333;
   }
 
-  .resume__title {
-    color: #fff;
-  }
-
   .resume__content {
     color: var(--dark-text);
   }
 
   .resume-contacts-form h2 {
-    color: #fff;
-  }
-
-  .resume__sidebar-title {
     color: #fff;
   }
 
@@ -116,13 +84,5 @@
 
   .sidebar-title {
     color: #fff;
-  }
-
-  /* ul.book_index_mini > li > a {
-    color: #ddd;
-  } */
-
-  .related-articles {
-    background-color: #444;
   }
 }

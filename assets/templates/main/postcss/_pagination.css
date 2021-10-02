@@ -18,6 +18,11 @@
     display: none;
   }
 
+  & > span {
+    display: inline-block;
+    margin: 4px;
+  }
+
   & > li {
     background-color: var(--main-color--hover);
     display: inline-block;

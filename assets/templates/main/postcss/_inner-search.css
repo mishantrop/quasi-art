@@ -1,6 +1,6 @@
 .inner-search {
-  max-width: 666px;
   overflow: hidden;
+  margin: 0 0 8px;
 
   @media (--mobile) {
     clear: both;

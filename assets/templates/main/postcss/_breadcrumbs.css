@@ -2,11 +2,25 @@
   font-size: 1rem;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 !important;
+  margin: 8px 0 0;
   padding: 0 !important;
 
   @media print {
     display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  &__li {
+    align-items: center;
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0 !important;
   }
 
   &__a {
@@ -33,13 +47,5 @@
     span {
       font-size: 1rem;
     }
-  }
-
-  &__li {
-    align-items: center;
-    display: inline-flex;
-    font-size: 1rem;
-    list-style-type: none;
-    margin: 0 !important;
   }
 }

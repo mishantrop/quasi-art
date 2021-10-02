@@ -1,78 +1,73 @@
-.article {
-  &-item {
-    display: flex;
-    margin: 0 0 1rem;
-    overflow: hidden;
+.article-item {
+  color: var(--main-color);
+  display: flex;
+  overflow: hidden;
+  text-decoration: none;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--dark-background);
+  }
+
+  &:hover {
+    background-color: #ddd;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--dark-background--hover);
+    }
+  }
+
+  &-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    margin: 8px 0 0;
     text-decoration: none;
 
-    @media (--mobile) {
-      border-bottom: 1px solid var(--second-color);
+    @media (prefers-color-scheme: dark) {
+      color: #ddd;
+    }
+  }
+
+  &-image {
+    height: 128px;
+    width: 128px;
+  }
+
+  &__left {
+    font-size: 0;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &__right {
+    padding: 4px 4px 0 16px;
+  }
+
+  &-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.4em;
+  }
+
+  &:hover {
+    color: var(--main-color--hover);
+
+    .article-item-image {
+      opacity: 0.9;
     }
 
-    &-description {
+    .article-item-title {
+      color: var(--second-color);
+    }
+
+    .article-item-description {
       text-decoration: none;
-    }
-
-    &-image {
-      width: 100%;
-    }
-
-    &__left {
-      background-size: cover;
-      min-width: 128px;
-
-      @media (max-width: 480px) {
-        display: none;
-      }
-    }
-
-    &__right {
-      padding: 0 8px 0 16px;
-    }
-
-    &-time {
-      align-items: center;
-      color: #aaa;
-      display: block;
-      margin-bottom: 0.4em;
-      text-decoration: none;
-
-      svg {
-        display: inline-block;
-        margin: 0 5px 0 0;
-        width: 16px;
-        height: 16px;
-
-        path {
-          fill: #aaa;
-        }
-      }
-    }
-
-    &-title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      line-height: 1em;
-      margin-top: 0;
-      margin-bottom: 0.4em;
-    }
-
-    &:hover {
-      color: var(--main-color--hover);
-      text-decoration: none;
-
-      .article-item-image {
-        opacity: 0.9;
-      }
-
-      .article-item-title {
-        color: var(--second-color);
-      }
-
-      .article-item-description {
-        text-decoration: none;
-      }
     }
   }
 }

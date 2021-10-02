@@ -6,10 +6,11 @@
     &__header {
       font-size: 1.5rem !important;
       font-weight: normal !important;
+      margin: 0 0 8px;
     }
 
     &__link {
-      color: var(--main-color) !important;
+      color: var(--second-color) !important;
       text-decoration: none;
 
       &:hover {
@@ -18,8 +19,12 @@
     }
 
     &__body {
-      color: #444;
+      color: #222;
       font-size: 1rem;
+
+      @media (prefers-color-scheme: dark) {
+        color: #ddd;
+      }
     }
 
     &__time {
@@ -30,8 +35,9 @@
 
 .sisea {
   &-results {
-    color: #666;
+    color: #222;
     font-size: 0.8rem;
+    margin: 0 0 8px;
   }
 
   &-paging {
