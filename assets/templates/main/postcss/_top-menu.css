@@ -26,20 +26,24 @@
     list-style: none;
     
     @media (--mobile) {
+      background-color: #fff;
+      bottom: 0;
       display: none;
+      left: 0;
+      padding: 0.5rem 2rem;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 4;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: #222;
+      }
     }
 
     &--opened {
       @media (--mobile) {
-        background-color: #fff;
-        bottom: 0;
         display: block;
-        left: 0;
-        padding: 0.5rem 2rem;
-        position: fixed;
-        right: 0;
-        top: 0;
-        z-index: 4;
       }
     }
   }
@@ -123,6 +127,7 @@
     align-items: center;
     background-color: #fff;
     background-image: none;
+    border: 0;
     color: #222;
     cursor: pointer;
     display: none;
