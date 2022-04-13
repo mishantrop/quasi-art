@@ -1,5 +1,9 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import hljs from 'highlight.js'
+import hljs from 'highlight.js/lib/core'
+import hljsJavaScript from 'highlight.js/lib/languages/javascript'
+import hljsTypeScript from 'highlight.js/lib/languages/typescript'
+import hljsCss from 'highlight.js/lib/languages/css'
+import hljsPHP from 'highlight.js/lib/languages/php'
 import imagesLoaded from 'imagesloaded'
 
 import { initBackToTopScroll } from './backtotop'
@@ -56,6 +60,10 @@ const init = () => {
 
   initLightbox()
 
+  hljs.registerLanguage('javascript', hljsJavaScript)
+  hljs.registerLanguage('typescript', hljsTypeScript)
+  hljs.registerLanguage('css', hljsCss)
+  hljs.registerLanguage('php', hljsPHP)
   hljs.initHighlightingOnLoad()
 
   const contactsFormOptions = {

@@ -3,7 +3,7 @@
   display: block;
   margin: 8px 0 0;
 
-  svg {
+  & > svg {
     display: inline-block;
     margin: 0 5px 0 0;
     width: 18px;
