@@ -94,61 +94,8 @@ a {
   height: 0;
 }
 
-
-
 .menu_item_sep {
   display: none;
-}
-
-.contacts_div {
-  max-width: 411px;
-  height: 24px;
-  margin: 20px auto;
-  text-align: center;
-}
-
-.contacts_div img {
-  width: 90%;
-}
-
-.gallery_item {
-  margin-bottom: 20px;
-  opacity: 1;
-}
-
-.gallery_item img {
-  width: 100%;
-}
-
-.gallery_item:hover > a.gallery_item_a {
-  opacity: 0.8;
-}
-
-.gallery_item a.gallery_item_a {
-  display: block;
-  background-color: #434;
-  transition: all 0.5s cubic-bezier(.25, .25, 0, 1);
-}
-
-.gallery_item:hover img {
-  opacity: 0.5;
-}
-
-.gallery_item .gallery_item_title {
-  color: #fff;
-  display: block;
-  font-weight: bold;
-  font-size: 1.25rem;
-  opacity: 0;
-  padding-right: 30px;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-}
-
-.gallery_item:hover .gallery_item_title {
-  opacity: 1;
 }
 
 .a_cat a {
@@ -194,23 +141,6 @@ ul.none {
   padding: 4px;
   margin: 4px;
 }
-
-/* ul.book_index_mini {
-  & > li {
-    line-height: 18px;
-    list-style-type: none;
-    padding: 8px;
-  }
-}
-
-ul.book_index_mini > li > a {
-  color: #000;
-  text-decoration: none;
-}
-
-ul.book_index_mini > li > a:hover {
-  color: #d36;
-} */
 
 table {
   border-collapse: collapse;

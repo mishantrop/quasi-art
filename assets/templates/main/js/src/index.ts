@@ -1,3 +1,5 @@
+import imagesLoaded from 'imagesloaded'
+
 import { initBackToTopScroll } from './backtotop'
 import { initLightbox } from './lightbox'
 import { sameHeight } from './sameheight'
@@ -44,7 +46,7 @@ const init = () => {
   const portfolioContainer = document.querySelector('.portfoilo-inner-item__images-wrapper')
   if (portfolioContainer) {
     // @ts-ignore
-    imagesLoaded(portfolioContainer, () => { // eslint-disable-line no-undef
+    imagesLoaded(portfolioContainer, () => {
       sameHeightWithResize('.portfoilo-inner-item__images-wrapper figure')
       sameHeightWithResize('.portfoilo-inner-item__images-wrapper figcaption')
     })
@@ -52,7 +54,8 @@ const init = () => {
 
   initLightbox()
   if ('hljs' in window) {
-    hljs.initHighlightingOnLoad() // eslint-disable-line no-undef
+    // @ts-ignore
+    hljs.initHighlightingOnLoad()
   }
 
   const contactsFormOptions = {
@@ -61,12 +64,10 @@ const init = () => {
     callbackOnSuccess: (data: any) => {
       console.log('callbackOnSuccess')
       console.log(data)
-      const messagesWrapper = document.querySelector('[data-quasiform="messages"]')
-      // @ts-ignore
+      const messagesWrapper: HTMLElement = document.querySelector('[data-quasiform="messages"]')
       messagesWrapper.style.display = 'block'
       messagesWrapper.innerHTML = '<ul><li>Сообщение успешно отправлено</li></ul>'
       setTimeout(() => {
-        // @ts-ignore
         messagesWrapper.style.display = 'none'
       }, 10000)
     },
@@ -76,9 +77,12 @@ const init = () => {
     },
   }
 
-  // eslint-disable-next-line no-unused-vars
-// @ts-ignore
-  const contactsForm = new window.quasiform.Quasiform(contactsFormOptions)
+  if ('quasiform' in window) {
+    // eslint-disable-next-line no-unused-vars
+    // @ts-ignore
+    // eslint-disable-next-line no-unused-vars
+    const contactsForm = new (<any><unknown>window.quasiform).Quasiform(contactsFormOptions)
+  }
 }
 
 if (document.readyState === 'complete' || document.readyState !== 'loading') {

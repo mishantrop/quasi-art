@@ -41,7 +41,7 @@ export class Navigation {
       const isMobileScreen = this.isMobileScreen()
       this.setState({
         isMobile: isMobileScreen,
-        isOpened: isMobileScreen ? false : this.state.isOpened
+        isOpened: isMobileScreen ? false : this.state.isOpened,
       })
       this.render()
     })
