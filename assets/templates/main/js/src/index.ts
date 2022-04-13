@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import imagesLoaded from 'imagesloaded'
 
 import { initBackToTopScroll } from './backtotop'
@@ -61,7 +62,7 @@ const init = () => {
   const contactsFormOptions = {
     hideFormOnSuccess: false,
     selector: '#contacts-form-wrapper',
-    callbackOnSuccess: (data: any) => {
+    callbackOnSuccess: (data: unknown) => {
       console.log('callbackOnSuccess')
       console.log(data)
       const messagesWrapper: HTMLElement = document.querySelector('[data-quasiform="messages"]')
@@ -71,17 +72,17 @@ const init = () => {
         messagesWrapper.style.display = 'none'
       }, 10000)
     },
-    callbackOnFail: (data: any) => {
+    callbackOnFail: (data: unknown) => {
       console.log('callbackOnFail')
       console.log(data)
     },
   }
 
   if ('quasiform' in window) {
-    // eslint-disable-next-line no-unused-vars
     // @ts-ignore
     // eslint-disable-next-line no-unused-vars
-    const contactsForm = new (<any><unknown>window.quasiform).Quasiform(contactsFormOptions)
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const contactsForm = new (<unknown>window.quasiform).Quasiform(contactsFormOptions)
   }
 }
 

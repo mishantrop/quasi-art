@@ -52,7 +52,7 @@ html {
   background-color: #eee;
   color: #111;
   font-weight: 400;
-  font-family: 'YandexSansTextWeb', Verdana, Arial;
+  font-family: 'YandexSansTextWeb', Verdana, Arial, sans-serif;
   margin: 0;
   overflow: visible;
   padding: 0;
@@ -144,24 +144,23 @@ ul.none {
 
 table {
   border-collapse: collapse;
-}
 
-table thead {
-  background-color: #ddd;
-}
+  &.table-bordered {
+    border: 2px solid #aaa;
 
-table.table-bordered {
-  border: 2px solid #aaa;
-}
+    & td {
+      vertical-align: top;
+    }
 
-table.table-bordered td,
-table.table-bordered th {
-  border: 1px solid #aaa;
-  padding: 10px;
-}
+    & td, th {
+      border: 1px solid #aaa;
+      padding: 10px;
+    }
+  }
 
-table.table-bordered td {
-  vertical-align: top;
+  & > thead {
+    background-color: #ddd;
+  }
 }
 
 .infinite-load {

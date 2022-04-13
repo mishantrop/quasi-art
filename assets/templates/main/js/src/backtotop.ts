@@ -1,4 +1,3 @@
-// @ts-ignore
 import scrollToElement from 'scroll-to-element'
 
 export const initBackToTopScroll = ({

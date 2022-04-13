@@ -1,11 +1,8 @@
+/* eslint-disable semi */
 export const superbutton = (event: MouseEvent) => {
-  // @ts-ignore
-  const x = event.pageX - event.target.offsetLeft
-  // @ts-ignore
-  const y = event.pageY - event.target.offsetTop
+  const x = event.pageX - (event.target as HTMLElement).offsetLeft;
+  const y = event.pageY - (event.target as HTMLElement).offsetTop;
 
-  // @ts-ignore
-  event.target.style.setProperty('--x', `${x}px`)
-  // @ts-ignore
-  event.target.style.setProperty('--y', `${y - 60}px`)
+  (event.target as HTMLElement).style.setProperty('--x', `${x}px`);
+  (event.target as HTMLElement).style.setProperty('--y', `${y - 60}px`);
 }
