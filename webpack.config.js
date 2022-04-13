@@ -6,8 +6,6 @@ const SpeedMeasurePlugin = require('speed-measure-webpack-plugin')
 const smp = new SpeedMeasurePlugin()
 
 module.exports = (env, argv) => {
-  console.log(argv)
-
   const isDev = argv.mode === 'development'
 
   const isAnalyzeEnabled = env.ANALYZE === '1'
