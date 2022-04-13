@@ -1,8 +1,8 @@
 {
   "hash": "ba9cb912852c97d96495",
   "version": "5.72.0",
-  "time": 2105,
-  "builtAt": 1649877745563,
+  "time": 2092,
+  "builtAt": 1649880358221,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/quasi-art.ru/assets/templates/main/dist",
   "assetsByChunkName": {
@@ -37,8 +37,8 @@
           "type": "sourceMap",
           "name": "main.min.js.map",
           "size": 224625,
-          "emitted": true,
-          "comparedForEmit": false,
+          "emitted": false,
+          "comparedForEmit": true,
           "cached": false,
           "info": {
             "development": true,
@@ -2273,9 +2273,9 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-string.js",
@@ -2673,8 +2673,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-          "issuerName": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+          "issuerName": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -2682,21 +2682,21 @@
               "id": "./assets/templates/main/js/src/index.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-              "name": "./assets/templates/main/js/src/sameheight.ts",
-              "id": "./assets/templates/main/js/src/sameheight.ts"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+              "name": "./assets/templates/main/js/src/helpers.ts",
+              "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-              "name": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
-              "id": "./node_modules/core-js/modules/web.dom-collections.for-each.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+              "name": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
+              "id": "./node_modules/core-js/modules/web.dom-collections.iterator.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/create-non-enumerable-property.js",
-          "issuerId": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+          "issuerId": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
           "chunks": [
             "main"
           ],
@@ -3179,8 +3179,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.iterator.js",
-          "issuerName": "./node_modules/core-js/modules/es.symbol.iterator.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -3193,16 +3193,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.iterator.js",
-              "name": "./node_modules/core-js/modules/es.symbol.iterator.js",
-              "id": "./node_modules/core-js/modules/es.symbol.iterator.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/define-well-known-symbol.js",
-          "issuerId": "./node_modules/core-js/modules/es.symbol.iterator.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -3281,8 +3281,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -3295,16 +3295,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/descriptors.js",
-          "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -3523,8 +3523,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/dom-token-list-prototype.js",
-          "issuerName": "./node_modules/core-js/internals/dom-token-list-prototype.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-create.js",
+          "issuerName": "./node_modules/core-js/internals/object-create.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -3532,26 +3532,26 @@
               "id": "./assets/templates/main/js/src/index.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-              "name": "./assets/templates/main/js/src/sameheight.ts",
-              "id": "./assets/templates/main/js/src/sameheight.ts"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+              "name": "./assets/templates/main/js/src/helpers.ts",
+              "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-              "name": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
-              "id": "./node_modules/core-js/modules/web.dom-collections.for-each.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/dom-token-list-prototype.js",
-              "name": "./node_modules/core-js/internals/dom-token-list-prototype.js",
-              "id": "./node_modules/core-js/internals/dom-token-list-prototype.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-create.js",
+              "name": "./node_modules/core-js/internals/object-create.js",
+              "id": "./node_modules/core-js/internals/object-create.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/document-create-element.js",
-          "issuerId": "./node_modules/core-js/internals/dom-token-list-prototype.js",
+          "issuerId": "./node_modules/core-js/internals/object-create.js",
           "chunks": [
             "main"
           ],
@@ -3644,8 +3644,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-          "issuerName": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+          "issuerName": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -3653,21 +3653,21 @@
               "id": "./assets/templates/main/js/src/index.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-              "name": "./assets/templates/main/js/src/sameheight.ts",
-              "id": "./assets/templates/main/js/src/sameheight.ts"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+              "name": "./assets/templates/main/js/src/helpers.ts",
+              "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-              "name": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
-              "id": "./node_modules/core-js/modules/web.dom-collections.for-each.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+              "name": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
+              "id": "./node_modules/core-js/modules/web.dom-collections.iterator.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/dom-iterables.js",
-          "issuerId": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+          "issuerId": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
           "chunks": [
             "main"
           ],
@@ -3746,8 +3746,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-          "issuerName": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+          "issuerName": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -3755,21 +3755,21 @@
               "id": "./assets/templates/main/js/src/index.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-              "name": "./assets/templates/main/js/src/sameheight.ts",
-              "id": "./assets/templates/main/js/src/sameheight.ts"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+              "name": "./assets/templates/main/js/src/helpers.ts",
+              "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-              "name": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
-              "id": "./node_modules/core-js/modules/web.dom-collections.for-each.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+              "name": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
+              "id": "./node_modules/core-js/modules/web.dom-collections.iterator.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/dom-token-list-prototype.js",
-          "issuerId": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+          "issuerId": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
           "chunks": [
             "main"
           ],
@@ -4053,8 +4053,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-keys.js",
-          "issuerName": "./node_modules/core-js/internals/object-keys.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-create.js",
+          "issuerName": "./node_modules/core-js/internals/object-create.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -4072,16 +4072,16 @@
               "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-keys.js",
-              "name": "./node_modules/core-js/internals/object-keys.js",
-              "id": "./node_modules/core-js/internals/object-keys.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-create.js",
+              "name": "./node_modules/core-js/internals/object-create.js",
+              "id": "./node_modules/core-js/internals/object-create.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/enum-bug-keys.js",
-          "issuerId": "./node_modules/core-js/internals/object-keys.js",
+          "issuerId": "./node_modules/core-js/internals/object-create.js",
           "chunks": [
             "main"
           ],
@@ -4174,8 +4174,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -4188,16 +4188,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/export.js",
-          "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -4867,8 +4867,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/function-uncurry-this.js",
-          "issuerName": "./node_modules/core-js/internals/function-uncurry-this.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/function-apply.js",
+          "issuerName": "./node_modules/core-js/internals/function-apply.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -4881,21 +4881,21 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/function-uncurry-this.js",
-              "name": "./node_modules/core-js/internals/function-uncurry-this.js",
-              "id": "./node_modules/core-js/internals/function-uncurry-this.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/function-apply.js",
+              "name": "./node_modules/core-js/internals/function-apply.js",
+              "id": "./node_modules/core-js/internals/function-apply.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/function-bind-native.js",
-          "issuerId": "./node_modules/core-js/internals/function-uncurry-this.js",
+          "issuerId": "./node_modules/core-js/internals/function-apply.js",
           "chunks": [
             "main"
           ],
@@ -5169,14 +5169,14 @@
               "id": "./assets/templates/main/js/src/index.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-              "name": "./assets/templates/main/js/src/sameheight.ts",
-              "id": "./assets/templates/main/js/src/sameheight.ts"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+              "name": "./assets/templates/main/js/src/helpers.ts",
+              "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
-              "name": "./node_modules/core-js/modules/es.object.to-string.js",
-              "id": "./node_modules/core-js/modules/es.object.to-string.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/redefine.js",
@@ -5267,8 +5267,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -5281,16 +5281,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/function-uncurry-this.js",
-          "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -5849,8 +5849,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -5863,16 +5863,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/global.js",
-          "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -6399,8 +6399,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -6413,16 +6413,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/has-own-property.js",
-          "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -6878,9 +6878,9 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-define-property.js",
@@ -6985,9 +6985,9 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-              "name": "./node_modules/core-js/modules/es.array.iterator.js",
-              "id": "./node_modules/core-js/modules/es.array.iterator.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-indexed-object.js",
@@ -7087,14 +7087,14 @@
               "id": "./assets/templates/main/js/src/index.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-              "name": "./assets/templates/main/js/src/sameheight.ts",
-              "id": "./assets/templates/main/js/src/sameheight.ts"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+              "name": "./assets/templates/main/js/src/helpers.ts",
+              "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
-              "name": "./node_modules/core-js/modules/es.object.to-string.js",
-              "id": "./node_modules/core-js/modules/es.object.to-string.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/redefine.js",
@@ -7199,8 +7199,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-          "issuerName": "./node_modules/core-js/modules/es.array.iterator.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -7213,16 +7213,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-              "name": "./node_modules/core-js/modules/es.array.iterator.js",
-              "id": "./node_modules/core-js/modules/es.array.iterator.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/internal-state.js",
-          "issuerId": "./node_modules/core-js/modules/es.array.iterator.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -7445,8 +7445,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -7459,16 +7459,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/is-callable.js",
-          "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -7874,9 +7874,9 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/export.js",
@@ -8125,8 +8125,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-          "issuerName": "./node_modules/core-js/modules/es.array.iterator.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -8139,16 +8139,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-              "name": "./node_modules/core-js/modules/es.array.iterator.js",
-              "id": "./node_modules/core-js/modules/es.array.iterator.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/is-pure.js",
-          "issuerId": "./node_modules/core-js/modules/es.array.iterator.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -8859,9 +8859,9 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-              "name": "./node_modules/core-js/modules/es.array.iterator.js",
-              "id": "./node_modules/core-js/modules/es.array.iterator.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/internal-state.js",
@@ -9170,8 +9170,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -9184,16 +9184,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/object-define-property.js",
-          "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -9871,8 +9871,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -9885,16 +9885,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/object-is-prototype-of.js",
-          "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -10400,9 +10400,9 @@
               "id": "./assets/templates/main/js/src/index.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-              "name": "./assets/templates/main/js/src/sameheight.ts",
-              "id": "./assets/templates/main/js/src/sameheight.ts"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+              "name": "./assets/templates/main/js/src/helpers.ts",
+              "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
@@ -10693,9 +10693,9 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.iterator.js",
-              "name": "./node_modules/core-js/modules/es.symbol.iterator.js",
-              "id": "./node_modules/core-js/modules/es.symbol.iterator.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/define-well-known-symbol.js",
@@ -10772,8 +10772,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
-          "issuerName": "./node_modules/core-js/modules/es.object.to-string.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -10781,21 +10781,21 @@
               "id": "./assets/templates/main/js/src/index.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-              "name": "./assets/templates/main/js/src/sameheight.ts",
-              "id": "./assets/templates/main/js/src/sameheight.ts"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+              "name": "./assets/templates/main/js/src/helpers.ts",
+              "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
-              "name": "./node_modules/core-js/modules/es.object.to-string.js",
-              "id": "./node_modules/core-js/modules/es.object.to-string.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/redefine.js",
-          "issuerId": "./node_modules/core-js/modules/es.object.to-string.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -11376,8 +11376,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-indexed-object.js",
-          "issuerName": "./node_modules/core-js/internals/to-indexed-object.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-object.js",
+          "issuerName": "./node_modules/core-js/internals/to-object.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -11390,21 +11390,21 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-              "name": "./node_modules/core-js/modules/es.array.iterator.js",
-              "id": "./node_modules/core-js/modules/es.array.iterator.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-indexed-object.js",
-              "name": "./node_modules/core-js/internals/to-indexed-object.js",
-              "id": "./node_modules/core-js/internals/to-indexed-object.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-object.js",
+              "name": "./node_modules/core-js/internals/to-object.js",
+              "id": "./node_modules/core-js/internals/to-object.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/require-object-coercible.js",
-          "issuerId": "./node_modules/core-js/internals/to-indexed-object.js",
+          "issuerId": "./node_modules/core-js/internals/to-object.js",
           "chunks": [
             "main"
           ],
@@ -11511,9 +11511,9 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/export.js",
@@ -11864,8 +11864,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/internal-state.js",
-          "issuerName": "./node_modules/core-js/internals/internal-state.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/shared.js",
+          "issuerName": "./node_modules/core-js/internals/shared.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -11878,21 +11878,21 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-              "name": "./node_modules/core-js/modules/es.array.iterator.js",
-              "id": "./node_modules/core-js/modules/es.array.iterator.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/internal-state.js",
-              "name": "./node_modules/core-js/internals/internal-state.js",
-              "id": "./node_modules/core-js/internals/internal-state.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/shared.js",
+              "name": "./node_modules/core-js/internals/shared.js",
+              "id": "./node_modules/core-js/internals/shared.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/shared-store.js",
-          "issuerId": "./node_modules/core-js/internals/internal-state.js",
+          "issuerId": "./node_modules/core-js/internals/shared.js",
           "chunks": [
             "main"
           ],
@@ -12315,8 +12315,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-          "issuerName": "./node_modules/core-js/modules/es.array.iterator.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -12329,16 +12329,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-              "name": "./node_modules/core-js/modules/es.array.iterator.js",
-              "id": "./node_modules/core-js/modules/es.array.iterator.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/to-indexed-object.js",
-          "issuerId": "./node_modules/core-js/modules/es.array.iterator.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -13110,9 +13110,9 @@
               "id": "./assets/templates/main/js/src/index.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-              "name": "./assets/templates/main/js/src/sameheight.ts",
-              "id": "./assets/templates/main/js/src/sameheight.ts"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+              "name": "./assets/templates/main/js/src/helpers.ts",
+              "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
@@ -13217,8 +13217,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "issuerName": "./node_modules/core-js/modules/es.symbol.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -13231,16 +13231,16 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/internals/to-string.js",
-          "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+          "issuerId": "./node_modules/core-js/modules/es.symbol.js",
           "chunks": [
             "main"
           ],
@@ -13701,9 +13701,9 @@
               "id": "./assets/templates/main/js/src/helpers.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-              "name": "./node_modules/core-js/modules/es.symbol.description.js",
-              "id": "./node_modules/core-js/modules/es.symbol.description.js"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+              "name": "./node_modules/core-js/modules/es.symbol.js",
+              "id": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-define-property.js",
@@ -14489,8 +14489,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-          "issuerName": "./assets/templates/main/js/src/sameheight.ts",
+          "issuer": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+          "issuerName": "./assets/templates/main/js/src/helpers.ts",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -14498,16 +14498,16 @@
               "id": "./assets/templates/main/js/src/index.ts"
             },
             {
-              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-              "name": "./assets/templates/main/js/src/sameheight.ts",
-              "id": "./assets/templates/main/js/src/sameheight.ts"
+              "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+              "name": "./assets/templates/main/js/src/helpers.ts",
+              "id": "./assets/templates/main/js/src/helpers.ts"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./node_modules/core-js/modules/es.object.to-string.js",
-          "issuerId": "./assets/templates/main/js/src/sameheight.ts",
+          "issuerId": "./assets/templates/main/js/src/helpers.ts",
           "chunks": [
             "main"
           ],
@@ -18792,8 +18792,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-      "issuerName": "./assets/templates/main/js/src/sameheight.ts",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+      "issuerName": "./assets/templates/main/js/src/helpers.ts",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -18801,16 +18801,16 @@
           "id": "./assets/templates/main/js/src/index.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-          "name": "./assets/templates/main/js/src/sameheight.ts",
-          "id": "./assets/templates/main/js/src/sameheight.ts"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+          "name": "./assets/templates/main/js/src/helpers.ts",
+          "id": "./assets/templates/main/js/src/helpers.ts"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/modules/es.object.to-string.js",
-      "issuerId": "./assets/templates/main/js/src/sameheight.ts",
+      "issuerId": "./assets/templates/main/js/src/helpers.ts",
       "chunks": [
         "main"
       ],
@@ -20116,9 +20116,9 @@
           "id": "./assets/templates/main/js/src/index.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-          "name": "./assets/templates/main/js/src/sameheight.ts",
-          "id": "./assets/templates/main/js/src/sameheight.ts"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+          "name": "./assets/templates/main/js/src/helpers.ts",
+          "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
@@ -20463,8 +20463,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-      "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -20477,16 +20477,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/global.js",
-      "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -21141,8 +21141,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-      "issuerName": "./node_modules/core-js/modules/es.array.iterator.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -21155,16 +21155,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-          "name": "./node_modules/core-js/modules/es.array.iterator.js",
-          "id": "./node_modules/core-js/modules/es.array.iterator.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/is-pure.js",
-      "issuerId": "./node_modules/core-js/modules/es.array.iterator.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -21284,8 +21284,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-      "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -21298,16 +21298,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/has-own-property.js",
-      "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -21525,8 +21525,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-      "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -21539,16 +21539,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/function-uncurry-this.js",
-      "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -22705,8 +22705,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-      "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -22719,16 +22719,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/is-callable.js",
-      "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -23016,8 +23016,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
-      "issuerName": "./node_modules/core-js/modules/es.object.to-string.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -23025,21 +23025,21 @@
           "id": "./assets/templates/main/js/src/index.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-          "name": "./assets/templates/main/js/src/sameheight.ts",
-          "id": "./assets/templates/main/js/src/sameheight.ts"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+          "name": "./assets/templates/main/js/src/helpers.ts",
+          "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
-          "name": "./node_modules/core-js/modules/es.object.to-string.js",
-          "id": "./node_modules/core-js/modules/es.object.to-string.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/redefine.js",
-      "issuerId": "./node_modules/core-js/modules/es.object.to-string.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -23159,8 +23159,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-      "issuerName": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+      "issuerName": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -23168,21 +23168,21 @@
           "id": "./assets/templates/main/js/src/index.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-          "name": "./assets/templates/main/js/src/sameheight.ts",
-          "id": "./assets/templates/main/js/src/sameheight.ts"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+          "name": "./assets/templates/main/js/src/helpers.ts",
+          "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-          "name": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
-          "id": "./node_modules/core-js/modules/web.dom-collections.for-each.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+          "name": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
+          "id": "./node_modules/core-js/modules/web.dom-collections.iterator.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/create-non-enumerable-property.js",
-      "issuerId": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+      "issuerId": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
       "chunks": [
         "main"
       ],
@@ -23316,8 +23316,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-      "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -23330,16 +23330,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/descriptors.js",
-      "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -23557,8 +23557,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-      "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -23571,16 +23571,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/object-define-property.js",
-      "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -24499,8 +24499,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-      "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -24513,16 +24513,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/object-is-prototype-of.js",
-      "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -24757,8 +24757,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-      "issuerName": "./node_modules/core-js/modules/es.array.iterator.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -24771,16 +24771,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-          "name": "./node_modules/core-js/modules/es.array.iterator.js",
-          "id": "./node_modules/core-js/modules/es.array.iterator.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/internal-state.js",
-      "issuerId": "./node_modules/core-js/modules/es.array.iterator.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -25167,9 +25167,9 @@
           "id": "./assets/templates/main/js/src/index.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-          "name": "./assets/templates/main/js/src/sameheight.ts",
-          "id": "./assets/templates/main/js/src/sameheight.ts"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+          "name": "./assets/templates/main/js/src/helpers.ts",
+          "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
@@ -25245,8 +25245,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-      "issuerName": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+      "issuerName": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -25254,21 +25254,21 @@
           "id": "./assets/templates/main/js/src/index.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-          "name": "./assets/templates/main/js/src/sameheight.ts",
-          "id": "./assets/templates/main/js/src/sameheight.ts"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+          "name": "./assets/templates/main/js/src/helpers.ts",
+          "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-          "name": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
-          "id": "./node_modules/core-js/modules/web.dom-collections.for-each.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+          "name": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
+          "id": "./node_modules/core-js/modules/web.dom-collections.iterator.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/dom-iterables.js",
-      "issuerId": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+      "issuerId": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
       "chunks": [
         "main"
       ],
@@ -25346,8 +25346,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-      "issuerName": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+      "issuerName": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -25355,21 +25355,21 @@
           "id": "./assets/templates/main/js/src/index.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-          "name": "./assets/templates/main/js/src/sameheight.ts",
-          "id": "./assets/templates/main/js/src/sameheight.ts"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+          "name": "./assets/templates/main/js/src/helpers.ts",
+          "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-          "name": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
-          "id": "./node_modules/core-js/modules/web.dom-collections.for-each.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.iterator.js",
+          "name": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
+          "id": "./node_modules/core-js/modules/web.dom-collections.iterator.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/dom-token-list-prototype.js",
-      "issuerId": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
+      "issuerId": "./node_modules/core-js/modules/web.dom-collections.iterator.js",
       "chunks": [
         "main"
       ],
@@ -25750,8 +25750,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-      "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -25764,16 +25764,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/export.js",
-      "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -26151,8 +26151,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-      "issuerName": "./node_modules/core-js/modules/es.array.iterator.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -26165,16 +26165,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-          "name": "./node_modules/core-js/modules/es.array.iterator.js",
-          "id": "./node_modules/core-js/modules/es.array.iterator.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/to-indexed-object.js",
-      "issuerId": "./node_modules/core-js/modules/es.array.iterator.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -26827,8 +26827,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-      "issuerName": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -26841,16 +26841,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/to-string.js",
-      "issuerId": "./node_modules/core-js/modules/es.symbol.description.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -27750,8 +27750,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.iterator.js",
-      "issuerName": "./node_modules/core-js/modules/es.symbol.iterator.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+      "issuerName": "./node_modules/core-js/modules/es.symbol.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -27764,16 +27764,16 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.iterator.js",
-          "name": "./node_modules/core-js/modules/es.symbol.iterator.js",
-          "id": "./node_modules/core-js/modules/es.symbol.iterator.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/define-well-known-symbol.js",
-      "issuerId": "./node_modules/core-js/modules/es.symbol.iterator.js",
+      "issuerId": "./node_modules/core-js/modules/es.symbol.js",
       "chunks": [
         "main"
       ],
@@ -29199,8 +29199,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/internal-state.js",
-      "issuerName": "./node_modules/core-js/internals/internal-state.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/shared.js",
+      "issuerName": "./node_modules/core-js/internals/shared.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -29213,21 +29213,21 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-          "name": "./node_modules/core-js/modules/es.array.iterator.js",
-          "id": "./node_modules/core-js/modules/es.array.iterator.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/internal-state.js",
-          "name": "./node_modules/core-js/internals/internal-state.js",
-          "id": "./node_modules/core-js/internals/internal-state.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/shared.js",
+          "name": "./node_modules/core-js/internals/shared.js",
+          "id": "./node_modules/core-js/internals/shared.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/shared-store.js",
-      "issuerId": "./node_modules/core-js/internals/internal-state.js",
+      "issuerId": "./node_modules/core-js/internals/shared.js",
       "chunks": [
         "main"
       ],
@@ -29333,9 +29333,9 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/export.js",
@@ -29439,8 +29439,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/function-uncurry-this.js",
-      "issuerName": "./node_modules/core-js/internals/function-uncurry-this.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/function-apply.js",
+      "issuerName": "./node_modules/core-js/internals/function-apply.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -29453,21 +29453,21 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/function-uncurry-this.js",
-          "name": "./node_modules/core-js/internals/function-uncurry-this.js",
-          "id": "./node_modules/core-js/internals/function-uncurry-this.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/function-apply.js",
+          "name": "./node_modules/core-js/internals/function-apply.js",
+          "id": "./node_modules/core-js/internals/function-apply.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/function-bind-native.js",
-      "issuerId": "./node_modules/core-js/internals/function-uncurry-this.js",
+      "issuerId": "./node_modules/core-js/internals/function-apply.js",
       "chunks": [
         "main"
       ],
@@ -29573,8 +29573,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-indexed-object.js",
-      "issuerName": "./node_modules/core-js/internals/to-indexed-object.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-object.js",
+      "issuerName": "./node_modules/core-js/internals/to-object.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -29587,21 +29587,21 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-          "name": "./node_modules/core-js/modules/es.array.iterator.js",
-          "id": "./node_modules/core-js/modules/es.array.iterator.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-indexed-object.js",
-          "name": "./node_modules/core-js/internals/to-indexed-object.js",
-          "id": "./node_modules/core-js/internals/to-indexed-object.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-object.js",
+          "name": "./node_modules/core-js/internals/to-object.js",
+          "id": "./node_modules/core-js/internals/to-object.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/require-object-coercible.js",
-      "issuerId": "./node_modules/core-js/internals/to-indexed-object.js",
+      "issuerId": "./node_modules/core-js/internals/to-object.js",
       "chunks": [
         "main"
       ],
@@ -29919,9 +29919,9 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-define-property.js",
@@ -30011,8 +30011,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/dom-token-list-prototype.js",
-      "issuerName": "./node_modules/core-js/internals/dom-token-list-prototype.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-create.js",
+      "issuerName": "./node_modules/core-js/internals/object-create.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -30020,26 +30020,26 @@
           "id": "./assets/templates/main/js/src/index.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-          "name": "./assets/templates/main/js/src/sameheight.ts",
-          "id": "./assets/templates/main/js/src/sameheight.ts"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+          "name": "./assets/templates/main/js/src/helpers.ts",
+          "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/web.dom-collections.for-each.js",
-          "name": "./node_modules/core-js/modules/web.dom-collections.for-each.js",
-          "id": "./node_modules/core-js/modules/web.dom-collections.for-each.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/dom-token-list-prototype.js",
-          "name": "./node_modules/core-js/internals/dom-token-list-prototype.js",
-          "id": "./node_modules/core-js/internals/dom-token-list-prototype.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-create.js",
+          "name": "./node_modules/core-js/internals/object-create.js",
+          "id": "./node_modules/core-js/internals/object-create.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/document-create-element.js",
-      "issuerId": "./node_modules/core-js/internals/dom-token-list-prototype.js",
+      "issuerId": "./node_modules/core-js/internals/object-create.js",
       "chunks": [
         "main"
       ],
@@ -30145,9 +30145,9 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-define-property.js",
@@ -30338,14 +30338,14 @@
           "id": "./assets/templates/main/js/src/index.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-          "name": "./assets/templates/main/js/src/sameheight.ts",
-          "id": "./assets/templates/main/js/src/sameheight.ts"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+          "name": "./assets/templates/main/js/src/helpers.ts",
+          "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
-          "name": "./node_modules/core-js/modules/es.object.to-string.js",
-          "id": "./node_modules/core-js/modules/es.object.to-string.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/redefine.js",
@@ -30463,9 +30463,9 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-          "name": "./node_modules/core-js/modules/es.array.iterator.js",
-          "id": "./node_modules/core-js/modules/es.array.iterator.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/internal-state.js",
@@ -30550,14 +30550,14 @@
           "id": "./assets/templates/main/js/src/index.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/sameheight.ts",
-          "name": "./assets/templates/main/js/src/sameheight.ts",
-          "id": "./assets/templates/main/js/src/sameheight.ts"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/helpers.ts",
+          "name": "./assets/templates/main/js/src/helpers.ts",
+          "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.object.to-string.js",
-          "name": "./node_modules/core-js/modules/es.object.to-string.js",
-          "id": "./node_modules/core-js/modules/es.object.to-string.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/redefine.js",
@@ -30661,9 +30661,9 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-string.js",
@@ -31007,9 +31007,9 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.array.iterator.js",
-          "name": "./node_modules/core-js/modules/es.array.iterator.js",
-          "id": "./node_modules/core-js/modules/es.array.iterator.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/to-indexed-object.js",
@@ -31629,8 +31629,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-keys.js",
-      "issuerName": "./node_modules/core-js/internals/object-keys.js",
+      "issuer": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-create.js",
+      "issuerName": "./node_modules/core-js/internals/object-create.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/babel-loader/lib/index.js!/home/user/projects/quasi-art.ru/assets/templates/main/js/src/index.ts",
@@ -31648,16 +31648,16 @@
           "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-keys.js",
-          "name": "./node_modules/core-js/internals/object-keys.js",
-          "id": "./node_modules/core-js/internals/object-keys.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/object-create.js",
+          "name": "./node_modules/core-js/internals/object-create.js",
+          "id": "./node_modules/core-js/internals/object-create.js"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "./node_modules/core-js/internals/enum-bug-keys.js",
-      "issuerId": "./node_modules/core-js/internals/object-keys.js",
+      "issuerId": "./node_modules/core-js/internals/object-create.js",
       "chunks": [
         "main"
       ],
@@ -31763,9 +31763,9 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.description.js",
-          "name": "./node_modules/core-js/modules/es.symbol.description.js",
-          "id": "./node_modules/core-js/modules/es.symbol.description.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/export.js",
@@ -32407,9 +32407,9 @@
           "id": "./assets/templates/main/js/src/helpers.ts"
         },
         {
-          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.iterator.js",
-          "name": "./node_modules/core-js/modules/es.symbol.iterator.js",
-          "id": "./node_modules/core-js/modules/es.symbol.iterator.js"
+          "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/modules/es.symbol.js",
+          "name": "./node_modules/core-js/modules/es.symbol.js",
+          "id": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
           "identifier": "/home/user/projects/quasi-art.ru/node_modules/core-js/internals/define-well-known-symbol.js",
