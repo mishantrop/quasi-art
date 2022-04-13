@@ -3,9 +3,11 @@ const path = require('path')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const SpeedMeasurePlugin = require('speed-measure-webpack-plugin')
 
-const smp = new SpeedMeasurePlugin()
+module.exports = (env, argv) => {
+  console.log(argv)
 
-module.exports = (env) => {
+  const isDev = argv.mode === 'development'
+
   const isAnalyzeEnabled = env.ANALYZE === '1'
   const isAnalyzeNeedReport = env.ANALYZENEEDREPORT === '1'
   const analyzerMode = env.ANALYZERMODE || 'json'
@@ -46,8 +48,11 @@ module.exports = (env) => {
     stats: {
       colors: true,
     },
-    devtool: 'source-map',
+    devtool: isDev ? 'source-map' : undefined,
   }
 
+  const smp = new SpeedMeasurePlugin({
+    disable: isAnalyzeNeedReport,
+  })
   return smp.wrap(config)
 }

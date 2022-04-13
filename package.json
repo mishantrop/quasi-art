@@ -11,7 +11,8 @@
     "js:analyze:report": "webpack --progress --env ANALYZE=1 ANALYZENEEDREPORT=1 ANALYZERMODE='static' --mode=development",
     "js:build": "webpack --progress --mode=production",
     "js:lint": "./node_modules/.bin/eslint assets/templates/main/js/src/**",
-    "js:watch": "webpack --watch --progress --mode=development"
+    "js:watch": "webpack --watch --progress --mode=development",
+    "prepare": "husky install"
   },
   "author": "mishantrop",
   "browserslist": [
@@ -85,10 +86,5 @@
     "luminous-lightbox": "2.4.0",
     "quasiform": "3.0.3",
     "scroll-to-element": "2.0.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run js:analyze:report, css:lint, js:lint"
-    }
   }
 }
