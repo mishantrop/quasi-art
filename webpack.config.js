@@ -6,6 +6,10 @@ const SpeedMeasurePlugin = require('speed-measure-webpack-plugin')
 const smp = new SpeedMeasurePlugin()
 
 module.exports = (env) => {
+  const isAnalyzeEnabled = env.ANALYZE === '1'
+  const isAnalyzeNeedReport = env.ANALYZENEEDREPORT === '1'
+  const analyzerMode = env.ANALYZERMODE || 'json'
+
   const config = {
     entry: path.resolve(__dirname, 'assets/templates/main/js/src/index.ts'),
     target: [ 'web', 'es5' ],
@@ -28,11 +32,15 @@ module.exports = (env) => {
       ],
     },
     plugins: [
-      // new webpack.DefinePlugin({
-      //   'process.env.NODE_ENV': 'production',
-      // }),
-      ...env && env.ANALYZE === '1'
-        ? [ new BundleAnalyzerPlugin() ]
+      ...isAnalyzeEnabled
+        ? [
+            new BundleAnalyzerPlugin({
+              generateStatsFile: isAnalyzeNeedReport,
+              analyzerMode,
+              openAnalyzer: !isAnalyzeNeedReport,
+              defaultSizes: 'gzip',
+            }),
+          ]
         : [],
     ],
     stats: {

@@ -7,7 +7,8 @@
     "css:build": "gulp build",
     "css:lint": "gulp lint",
     "css:watch": "gulp watch",
-    "js:analyze": "webpack --watch --progress --env ANALYZE=1 --mode=development",
+    "js:analyze": "webpack --progress --env ANALYZE=1 --mode=development",
+    "js:analyze:report": "webpack --progress --env ANALYZE=1 ANALYZENEEDREPORT=1 ANALYZERMODE='static' --mode=development",
     "js:build": "webpack --progress --mode=production",
     "js:lint": "./node_modules/.bin/eslint assets/templates/main/js/src/**",
     "js:watch": "webpack --watch --progress --mode=development"
@@ -87,7 +88,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:css"
+      "pre-commit": "npm run js:analyze:report, css:lint, js:lint"
     }
   }
 }
