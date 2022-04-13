@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
+import hljs from 'highlight.js'
 import imagesLoaded from 'imagesloaded'
 
 import { initBackToTopScroll } from './backtotop'
@@ -54,10 +55,8 @@ const init = () => {
   }
 
   initLightbox()
-  if ('hljs' in window) {
-    // @ts-ignore
-    hljs.initHighlightingOnLoad()
-  }
+
+  hljs.initHighlightingOnLoad()
 
   const contactsFormOptions = {
     hideFormOnSuccess: false,
