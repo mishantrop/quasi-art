@@ -102,7 +102,7 @@
   animation: lum-fadeZoom 180ms ease-out;
 }
 .lum-lightbox.lum-open {
-    z-index: 2;
+    z-index: 3;
 }
 .lum-lightbox.lum-closing {
   animation: lum-fade 300ms ease-in;

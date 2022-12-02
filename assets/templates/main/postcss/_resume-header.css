@@ -69,7 +69,7 @@
     line-height: 1.2;
 
     @media (--mobile) {
-      padding: 1rem;
+      padding: 1rem 1rem 0;
     }
 
     &__intro {
@@ -114,7 +114,7 @@
     vertical-align: middle;
 
     &-wrapper {
-      padding: 2rem 0;
+      padding: 2rem 0 0;
       display: flex;
     }
 
