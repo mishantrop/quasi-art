@@ -20,6 +20,8 @@
     background-color: #fff;
     float: right;
     position: relative;
+    border-radius: 8px;
+    overflow: hidden;
 
     @media (--desktop) {
       float: none;
@@ -30,7 +32,6 @@
   &__input {
     background-color: #fff;
     border: 0;
-    border-left: 3px solid var(--main-color);
     border-radius: 0;
     color: var(--main-color);
     line-height: 2.3125rem;
@@ -39,7 +40,6 @@
     width: 100%;
 
     &:focus {
-      border-left: 3px solid var(--second-color);
       outline-color: transparent;
       outline-offset: 0;
     }

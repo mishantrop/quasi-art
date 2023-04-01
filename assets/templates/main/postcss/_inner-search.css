@@ -9,7 +9,6 @@
 
   &__form {
     background-color: #fff;
-    border-left: 3px solid var(--main-color);
     position: relative;
 
     @media (--mobile) {

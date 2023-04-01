@@ -1,197 +1,224 @@
 .icon {
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
 
-  &--name-cat {
-    background-image: url('/data/images/smileys/cat.png');
-  }
+    &--name-cat {
+        background-image: url('/data/images/smileys/cat.png');
+    }
 }
 
 .resume-header {
-  align-items: center;
-  background-color: var(--main-color);
-  display: flex;
-  justify-content: flex-end;
-  overflow: hidden;
-  padding: 24px 0;
-  position: relative;
+    align-items: center;
+    background: linear-gradient(145deg, #233539, #d1275a);
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    padding: 24px 0;
+    position: relative;
+    z-index: 0;
 
-  &__avatar {
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    display: block;
-    height: 200px;
-    opacity: 0.8;
-    transition: opacity 0.2s linear;
-    width: 200px;
-
-    &:hover {
-      opacity: 1;
+    &::before {
+        background: red;
+        box-shadow: 0 0 140px 64px #c52858;
+        z-index: 2;
+        top: -100%;
+        left: -72%;
+        opacity: .8;
     }
 
-    &--circle {
-      &-primary {
-        background: radial-gradient(
-          circle at 30% 107%,
-          var(--second-color) 0%,
-          var(--second-color) 5%,
-          var(--second-color) 45%,
-          var(--second-color) 60%,
-          var(--second-color--hover) 90%);
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &::after {
+        background: #fff;
+        z-index: 3;
+        bottom: -96%;
+        right: -72%;
+        box-shadow: 0 0 140px 64px #fff;
+        opacity: 1;
+        border-radius: 100%;
+    }
+
+    &__avatar {
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 50%;
-        height: 216px;
-        margin: 0 24px 0 auto;
-        padding: 4px;
-        width: 216px;
+        display: block;
+        height: 200px;
+        opacity: 0.8;
+        transition: opacity 0.2s linear;
+        width: 200px;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &--circle {
+            &-primary {
+                background: radial-gradient(circle at 30% 107%,
+                var(--second-color) 0%,
+                var(--second-color) 5%,
+                var(--second-color) 45%,
+                var(--second-color) 60%,
+                var(--second-color--hover) 90%);
+                border-radius: 50%;
+                height: 216px;
+                margin: 0 24px 0 auto;
+                padding: 4px;
+                width: 216px;
+
+                @media (--mobile) {
+                    margin: 0 auto;
+                }
+            }
+
+            &-secondary {
+                background-color: var(--main-color);
+                border-radius: 50%;
+                height: 208px;
+                padding: 4px;
+                width: 208px;
+            }
+        }
+    }
+
+    &-info {
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: 1.2;
 
         @media (--mobile) {
-          margin: 0 auto;
+            padding: 1rem 1rem 0;
         }
-      }
 
-      &-secondary {
-        background-color: var(--main-color);
-        border-radius: 50%;
-        height: 208px;
-        padding: 4px;
-        width: 208px;
-      }
+        &__intro {
+            display: block;
+            max-width: 600px;
+
+            a {
+                color: #ff99b7;
+
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
     }
-  }
 
-  &-info {
-    color: #fff;
-    font-size: 1.5rem;
-    line-height: 1.2;
+    &-write {
+        appearance: none;
+        background-color: #233539;
+        border-radius: 24px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1.25rem;
+        font-weight: normal;
+        outline: none;
+        overflow: hidden;
+        padding: 0.5rem 1rem;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.2s linear, color 0.2s linear;
+        user-select: none;
+        vertical-align: middle;
 
-    @media (--mobile) {
-      padding: 1rem 1rem 0;
-    }
+        &-wrapper {
+            padding: 2rem 0 0;
+            display: flex;
+        }
 
-    &__intro {
-      display: block;
-      max-width: 600px;
+        span {
+            align-items: center;
+            display: flex;
+            pointer-events: none;
+            position: relative;
+        }
 
-      a {
-        color: #ff99b7;
+        svg {
+            display: block;
+            margin: 0 1rem 0 0;
+
+            path {
+                fill: #fff;
+            }
+        }
+
+        &::before {
+            --size: 0;
+
+            background: radial-gradient(circle closest-side, #b14, transparent);
+            content: '';
+            height: var(--size);
+            left: var(--x);
+            position: absolute;
+            top: var(--y);
+            transform: translate(-50%, -50%);
+            transition: width 0.3s ease, height 0.3s ease;
+            width: var(--size);
+        }
+
+        &:hover::before {
+            --size: 200px;
+        }
 
         &:hover,
         &:focus {
-          text-decoration: none;
+            background-color: #881a3c;
+            color: #fff;
+            text-decoration: none;
         }
-      }
-
-      svg {
-        width: 24px;
-        height: 24px;
-      }
-    }
-  }
-
-  &-write {
-    appearance: none;
-    background-color: #233539;
-    border-radius: 4px;
-    border: 1px solid #fff;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1.25rem;
-    font-weight: normal;
-    outline: none;
-    overflow: hidden;
-    padding: 0.5rem 1rem;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.2s linear, color 0.2s linear;
-    user-select: none;
-    vertical-align: middle;
-
-    &-wrapper {
-      padding: 2rem 0 0;
-      display: flex;
     }
 
-    span {
-      align-items: center;
-      display: flex;
-      pointer-events: none;
-      position: relative;
-    }
+    &-links {
+        display: flex;
+        padding: 0 0 0 1rem;
 
-    svg {
-      display: block;
-      margin: 0 1rem 0 0;
+        &__link {
+            align-items: center;
+            color: var(--main-color);
+            display: flex;
+            padding: 5px 0;
 
-      path {
-        fill: #fff;
-      }
-    }
+            & svg {
+                display: block;
+                height: 20px;
+                margin: 0 5px 0 0;
+                width: 20px;
 
-    &::before {
-      --size: 0;
+                & path {
+                    fill: #fff;
+                    transition: fill 0.2s ease;
+                }
+            }
 
-      background: radial-gradient(circle closest-side, #b14, transparent);
-      content: '';
-      height: var(--size);
-      left: var(--x);
-      position: absolute;
-      top: var(--y);
-      transform: translate(-50%, -50%);
-      transition: width 0.3s ease, height 0.3s ease;
-      width: var(--size);
-    }
+            &:hover,
+            &:focus {
+                color: var(--second-color--hover);
 
-    &:hover::before {
-      --size: 200px;
-    }
-
-    &:hover,
-    &:focus {
-      background-color: #881a3c;
-      color: #fff;
-      text-decoration: none;
-    }
-  }
-
-  &-links {
-    display: flex;
-    padding: 0 0 0 1rem;
-
-    &__link {
-      align-items: center;
-      color: var(--main-color);
-      display: flex;
-      padding: 5px 0;
-
-      & svg {
-        display: block;
-        height: 20px;
-        margin: 0 5px 0 0;
-        width: 20px;
-
-        & path {
-          fill: #fff;
-          transition: fill 0.2s ease;
+                svg {
+                    path {
+                        fill: var(--second-color--hover);
+                    }
+                }
+            }
         }
-      }
-
-      &:hover,
-      &:focus {
-        color: var(--second-color--hover);
-
-        svg {
-          path {
-            fill: var(--second-color--hover);
-          }
-        }
-      }
     }
-  }
 }

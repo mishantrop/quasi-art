@@ -76,6 +76,7 @@
     color: #222;
     font-size: 1rem;
     line-height: 1.2;
+    margin: 0 0 1rem;
     text-align: left;
     text-indent: 1rem;
     word-break: break-word;
@@ -116,13 +117,17 @@
   figure {
     text-align: center;
 
-    figcaption {
+    & figcaption {
       font-size: 1rem;
-      line-height: 28px;
+      line-height: 1.2;
     }
 
     img {
       max-width: 100%;
+    }
+
+    & > a {
+      text-decoration: none;
     }
   }
 

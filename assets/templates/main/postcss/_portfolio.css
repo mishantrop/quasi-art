@@ -1,7 +1,9 @@
 .portfolio-item {
+  border-radius: 56px;
   box-shadow: 2px 2px 8px 2px #ccc;
   display: block;
   margin: 0 0 2rem;
+  overflow: hidden;
   text-decoration: none;
 
   @media (prefers-color-scheme: dark) {
@@ -14,10 +16,10 @@
     display: block;
     overflow: hidden;
     padding: 0;
+    text-decoration: none;
 
     &:hover {
       color: var(--main-color--hover);
-      text-decoration: none;
 
       .portfolio-item__image {
         &::after {

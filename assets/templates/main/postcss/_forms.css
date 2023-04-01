@@ -103,6 +103,9 @@ select.form-control-lg:not([size]):not([multiple]) {
 
   & > label {
     color: #222;
+    line-height: 1.2;
+    padding: 4px 0;
+    display: block;
 
     @media (prefers-color-scheme: dark) {
       color: #ddd;

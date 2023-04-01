@@ -1,75 +1,81 @@
-import { isMobile } from './helpers'
+import { isMobile as isMobileFn } from './helpers'
 
 interface State {
-  isOpened: boolean;
-  isMobile: boolean;
+    isOpened: boolean;
+    isMobile: boolean;
 }
 
 export class Navigation {
-  state: State
-  menuNav: HTMLDivElement
-  menuToggler: HTMLDivElement
-  iconClosed: HTMLDivElement
-  iconOpened: HTMLDivElement
-  navbarTogglerIcon: HTMLElement
+    state: State
 
-  setState(patch: Partial<State>) {
-    this.state = { ...this.state, ...patch }
-    this.render()
-  }
+    menuNav: HTMLDivElement
 
-  init() {
-    this.state = {
-      isOpened: false,
-      isMobile: this.isMobileScreen(),
+    menuToggler: HTMLDivElement
+
+    iconClosed: HTMLDivElement
+
+    iconOpened: HTMLDivElement
+
+    navbarTogglerIcon: HTMLElement
+
+    setState(patch: Partial<State>) {
+        this.state = { ...this.state, ...patch }
+        this.render()
     }
 
-    this.menuNav = document.querySelector('.menu-nav')
-    this.menuToggler = document.querySelector('#menu-toggler')
-    this.iconClosed = document.querySelector('.menu-icon--closed')
-    this.iconOpened = document.querySelector('.menu-icon--opened')
-    this.navbarTogglerIcon = this.menuToggler.querySelector('i')
+    init() {
+        this.state = {
+            isOpened: false,
+            isMobile: this.isMobileScreen(),
+        }
 
-    this.menuToggler.addEventListener('click', () => {
-      const { isOpened } = this.state
-      this.setState({ isOpened: !isOpened })
-    })
+        this.menuNav = document.querySelector('.menu-nav')
+        this.menuToggler = document.querySelector('#menu-toggler')
+        this.iconClosed = document.querySelector('.menu-icon--closed')
+        this.iconOpened = document.querySelector('.menu-icon--opened')
+        this.navbarTogglerIcon = this.menuToggler.querySelector('i')
 
-    this.render()
+        this.menuToggler.addEventListener('click', () => {
+            const { isOpened } = this.state
+            this.setState({ isOpened: !isOpened })
+        })
 
-    window.addEventListener('resize', () => {
-      const isMobileScreen = this.isMobileScreen()
-      this.setState({
-        isMobile: isMobileScreen,
-        isOpened: isMobileScreen ? false : this.state.isOpened,
-      })
-      this.render()
-    })
-  }
+        this.render()
 
-  isMobileScreen() {
-    return isMobile()
-  }
-
-  render() {
-    const { isOpened, isMobile } = this.state
-
-    if (isOpened && isMobile) {
-      document.querySelector('body').style.overflow = 'hidden'
-    } else {
-      document.querySelector('body').style.overflow = 'unset'
+        window.addEventListener('resize', () => {
+            const isMobileScreen = this.isMobileScreen()
+            this.setState({
+                isMobile: isMobileScreen,
+                isOpened: isMobileScreen ? false : this.state.isOpened,
+            })
+            this.render()
+        })
     }
 
-    if (isOpened) {
-      this.menuNav.classList.add('menu-nav--opened')
-      this.menuToggler.classList.add('active')
-      this.iconClosed.style.display = 'none'
-      this.iconOpened.style.display = 'block'
-    } else {
-      this.menuNav.classList.remove('menu-nav--opened')
-      this.menuToggler.classList.remove('active')
-      this.iconClosed.style.display = 'block'
-      this.iconOpened.style.display = 'none'
+    // eslint-disable-next-line class-methods-use-this
+    isMobileScreen() {
+        return isMobileFn()
     }
-  }
+
+    render() {
+        const { isOpened, isMobile } = this.state
+
+        if (isOpened && isMobile) {
+            document.querySelector('body').style.overflow = 'hidden'
+        } else {
+            document.querySelector('body').style.overflow = 'unset'
+        }
+
+        if (isOpened) {
+            this.menuNav.classList.add('menu-nav--opened')
+            this.menuToggler.classList.add('active')
+            this.iconClosed.style.display = 'none'
+            this.iconOpened.style.display = 'block'
+        } else {
+            this.menuNav.classList.remove('menu-nav--opened')
+            this.menuToggler.classList.remove('active')
+            this.iconClosed.style.display = 'block'
+            this.iconOpened.style.display = 'none'
+        }
+    }
 }
