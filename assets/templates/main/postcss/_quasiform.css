@@ -1,11 +1,16 @@
 .quasiform {
-    &-errors {
-        background-color: #c7242b;
+    &-wrapper {
+        background-color: #eee;
+        padding: 10px;
+    }
+
+    &-errors,
+    &-messages {
         border-radius: 24px;
-        margin: 0;
+        margin: 0 0 1rem;
         padding: 1rem;
 
-        ul {
+        & ul {
             margin: 0;
             padding: 0;
         }
@@ -19,9 +24,15 @@
         }
     }
 
-    &-form {
-        border-radius: 4px;
+    &-errors {
+        background-color: #c7242b;
+    }
 
+    &-messages {
+        background-color: #2196f3;
+    }
+
+    &-form {
         &-checkbox {
             background-color: #fff;
             border: 2px solid #d36;
@@ -184,30 +195,5 @@
             margin: 0 10px 0 0;
             width: 32px;
         }
-    }
-
-    &-messages {
-        background-color: #2196f3;
-        border-radius: 24px;
-        margin: 0;
-        padding: 1rem;
-
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        &-item,
-        li {
-            color: #fff;
-            font-size: 1rem;
-            line-height: 1.5;
-            list-style: none;
-        }
-    }
-
-    &-wrapper {
-        background-color: #eee;
-        padding: 10px;
     }
 }
