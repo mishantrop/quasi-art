@@ -1,53 +1,53 @@
 .doc_text {
-  max-width: 800px;
-  padding: 8px 8px 8px 24px;
-  font-size: 1rem;
+    max-width: 800px;
+    padding: 8px 8px 8px 24px;
+    font-size: 1rem;
 
-  p {
-    margin: 8px 0;
-  }
+    p {
+        margin: 8px 0;
+    }
 }
 
 .doc_table {
-  background-color: #434;
-  color: #fff;
-  font-size: 1rem;
-  margin: 1rem 0;
-  padding: 1rem;
-  padding: 4px;
-  text-align: justify;
+    background-color: #434;
+    color: #fff;
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    padding: 4px;
+    text-align: justify;
 }
 
 .doc_img_p {
-  background-color: #434;
-  color: #fff;
-  margin: 1rem 0;
-  padding: 1rem;
-  text-align: center;
+    background-color: #434;
+    color: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
 
-  img {
-    max-width: 100%;
-  }
+    img {
+        max-width: 100%;
+    }
 
-  div {
-    font-size: 1rem;
-    padding: 1rem 0 0;
-  }
+    div {
+        font-size: 1rem;
+        padding: 1rem 0 0;
+    }
 }
 
 .doc_mats_div {
-  float: left;
-  margin: 0 8px 8px 0;
+    float: left;
+    margin: 0 8px 8px 0;
 }
 
 .doc_mats_div img {
-  max-width: 220px;
-  max-height: 220px;
+    max-width: 220px;
+    max-height: 220px;
 }
 
 .doc_img_descr {
-  padding: 0 4px;
-  margin: 0 4px;
-  font-size: 1rem;
-  vertical-align: top;
+    padding: 0 4px;
+    margin: 0 4px;
+    font-size: 1rem;
+    vertical-align: top;
 }

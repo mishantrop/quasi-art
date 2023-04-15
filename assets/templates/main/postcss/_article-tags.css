@@ -1,35 +1,35 @@
 .article-tags {
-  color: #666;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 8px 0 0;
+    color: #666;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 0 0;
 
-  a {
-    color: #000;
-    margin: 0 0.5rem 0 0;
-    text-decoration: none !important;
+    a {
+        color: #000;
+        margin: 0 0.5rem 0 0;
+        text-decoration: none !important;
 
-    &:hover {
-      color: var(--second-color--hover);
+        &:hover {
+            color: var(--second-color--hover);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            color: #fff;
+        }
     }
 
-    @media (prefers-color-scheme: dark) {
-      color: #fff;
+    svg {
+        display: inline-block;
+        margin: 0 5px 0 0;
+        width: 18px;
+        height: 18px;
+
+        path {
+            fill: #666;
+        }
     }
-  }
 
-  svg {
-    display: inline-block;
-    margin: 0 5px 0 0;
-    width: 18px;
-    height: 18px;
-
-    path {
-      fill: #666;
+    @media print {
+        display: none;
     }
-  }
-
-  @media print {
-    display: none;
-  }
 }

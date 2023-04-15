@@ -1,6 +1,6 @@
 .index-articles {
-  &__items {
-    margin-bottom: 24px;
-    margin-top: 24px;
-  }
+    &__items {
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
 }

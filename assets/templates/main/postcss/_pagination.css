@@ -4,64 +4,64 @@
 .pagination > .active > span,
 .pagination > .active > span:focus,
 .pagination > .active > span:hover {
-  background-color: #842541;
-  border-color: inherit;
+    background-color: #842541;
+    border-color: inherit;
 }
 
 .pagination {
-  clear: both;
-  display: block;
-  margin: 1rem auto;
-  text-align: center;
+    clear: both;
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
 
-  @media print {
-    display: none;
-  }
-
-  & > span {
-    display: inline-block;
-    margin: 4px;
-  }
-
-  & > li {
-    background-color: var(--main-color--hover);
-    display: inline-block;
-    margin: 4px;
+    @media print {
+        display: none;
+    }
 
     & > span {
-      background-color: var(--main-color--hover);
-      border: 0;
-      color: #fff;
-      display: block;
-      padding: 6px 1rem;
-      text-decoration: none;
+        display: inline-block;
+        margin: 4px;
     }
 
-    & > a {
-      background-color: var(--second-color);
-      border: 0;
-      color: #fff;
-      display: block;
-      padding: 6px 1rem;
-      text-decoration: none;
+    & > li {
+        background-color: var(--main-color--hover);
+        display: inline-block;
+        margin: 4px;
 
-      &.active {
-        background-color: var(--second-color--hover);
-      }
+        & > span {
+            background-color: var(--main-color--hover);
+            border: 0;
+            color: #fff;
+            display: block;
+            padding: 6px 1rem;
+            text-decoration: none;
+        }
+
+        & > a {
+            background-color: var(--second-color);
+            border: 0;
+            color: #fff;
+            display: block;
+            padding: 6px 1rem;
+            text-decoration: none;
+
+            &.active {
+                background-color: var(--second-color--hover);
+            }
+        }
     }
-  }
 }
 
 .pagination > li > a:active {
-  background-color: var(--second-color--hover);
+    background-color: var(--second-color--hover);
 }
 
 .pagination > li > a:focus,
 .pagination > li > a:hover,
 .pagination > li > span:focus,
 .pagination > li > span:hover {
-  background-color: #f47;
-  color: #fff;
+    background-color: #f47;
+    color: #fff;
 }
 
 .pagination > .disabled > a,
@@ -70,20 +70,20 @@
 .pagination > .disabled > span,
 .pagination > .disabled > span:focus,
 .pagination > .disabled > span:hover {
-  color: #777;
-  cursor: not-allowed;
-  background-color: #ffbfd0;
-  border: 0;
+    color: #777;
+    cursor: not-allowed;
+    background-color: #ffbfd0;
+    border: 0;
 }
 
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }

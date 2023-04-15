@@ -1,39 +1,39 @@
 .resume-contacts {
-  &-list {
-    &__link {
-      color: var(--main-color);
-      width: 100%;
-      align-items: center;
-      display: flex;
-      padding: 5px 0;
+    &-list {
+        &__link {
+            color: var(--main-color);
+            width: 100%;
+            align-items: center;
+            display: flex;
+            padding: 5px 0;
 
-      & svg {
-        display: block;
-        height: 20px;
-        margin: 0 5px 0 0;
-        width: 20px;
+            & svg {
+                display: block;
+                height: 20px;
+                margin: 0 5px 0 0;
+                width: 20px;
 
-        & path {
-          fill: #222;
+                & path {
+                    fill: #222;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                color: var(--second-color--hover);
+                text-decoration: none;
+
+                svg {
+                    path {
+                        fill: var(--second-color--hover);
+                    }
+                }
+            }
         }
-      }
-
-      &:hover,
-      &:focus {
-        color: var(--second-color--hover);
-        text-decoration: none;
-
-        svg {
-          path {
-            fill: var(--second-color--hover);
-          }
-        }
-      }
     }
-  }
 
-  &-form {
-    background-color: #eee;
-    padding: 40px 0;
-  }
+    &-form {
+        background-color: #eee;
+        padding: 40px 0;
+    }
 }

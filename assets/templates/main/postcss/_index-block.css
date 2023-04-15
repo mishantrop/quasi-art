@@ -1,94 +1,94 @@
 .index-block {
-  &-wrapper {
-    padding: 48px 0;
+    &-wrapper {
+        padding: 48px 0;
 
-    & + .index-block-wrapper {
-      padding: 0 0 48px;
-    }
-  }
-
-  &--bg {
-    &-0 {
-      background-color: #ddd;
-
-      @media (prefers-color-scheme: dark) {
-        background-color: #222;
-      }
+        & + .index-block-wrapper {
+            padding: 0 0 48px;
+        }
     }
 
-    &-1 {
-      background-color: #eee;
+    &--bg {
+        &-0 {
+            background-color: #ddd;
 
-      @media (prefers-color-scheme: dark) {
-        background-color: #111;
-      }
-    }
-  }
+            @media (prefers-color-scheme: dark) {
+                background-color: #222;
+            }
+        }
 
-  &-header {
-    color: var(--main-color);
-    font-weight: 400;
-    font-size: 2rem;
-    margin: 0;
-    padding: 1.5rem;
-    text-align: center;
+        &-1 {
+            background-color: #eee;
 
-    @media (prefers-color-scheme: dark) {
-      color: #fff;
+            @media (prefers-color-scheme: dark) {
+                background-color: #111;
+            }
+        }
     }
 
-    &__link {
-      color: var(--main-color);
-      display: inline-block;
-      line-height: 1.2;
-      margin: 0 auto;
-      padding: 0;
-      text-align: left;
-      text-decoration: none;
-      text-transform: uppercase;
+    &-header {
+        color: var(--main-color);
+        font-weight: 400;
+        font-size: 2rem;
+        margin: 0;
+        padding: 1.5rem;
+        text-align: center;
 
-      @media (prefers-color-scheme: dark) {
-        color: #fff;
-      }
+        @media (prefers-color-scheme: dark) {
+            color: #fff;
+        }
 
-      &:hover {
-        color: var(--second-color--hover);
-        text-decoration: none;
-      }
+        &__link {
+            color: var(--main-color);
+            display: inline-block;
+            line-height: 1.2;
+            margin: 0 auto;
+            padding: 0;
+            text-align: left;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            @media (prefers-color-scheme: dark) {
+                color: #fff;
+            }
+
+            &:hover {
+                color: var(--second-color--hover);
+                text-decoration: none;
+            }
+        }
     }
-  }
 
-  &-more {
-    padding: 1rem 0;
-    text-align: center;
+    &-more {
+        padding: 1rem 0;
+        text-align: center;
 
-    &__link {
-      background-color: #fff;
-      border-color: #ccc;
-      border-radius: 0.25rem;
-      border: 1px solid #666;
-      color: var(--main-color);
-      display: inline-block;
-      font-size: 1.2rem;
-      font-weight: normal;
-      padding: 1rem 1rem;
-      text-align: center;
-      text-decoration: none;
-      transition: background-color 0.2s linear;
-      user-select: none;
-      vertical-align: middle;
-      white-space: nowrap;
+        &__link {
+            background-color: #fff;
+            border-color: #ccc;
+            border-radius: 0.25rem;
+            border: 1px solid #666;
+            color: var(--main-color);
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: normal;
+            padding: 1rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.2s linear;
+            user-select: none;
+            vertical-align: middle;
+            white-space: nowrap;
 
-      @media (prefers-color-scheme: dark) {
-        background-color: #222;
-        border-color: #eee;
-        color: #eee;
-      }
+            @media (prefers-color-scheme: dark) {
+                background-color: #222;
+                border-color: #eee;
+                color: #eee;
+            }
 
-      &:hover {
-        border: 1px solid var(--second-color--hover);
-        color: var(--second-color--hover);
-      }
+            &:hover {
+                border: 1px solid var(--second-color--hover);
+                color: var(--second-color--hover);
+            }
+        }
     }
-  }
 }
