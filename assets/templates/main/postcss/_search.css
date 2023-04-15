@@ -1,50 +1,50 @@
 .search {
-  &-result {
-    margin: 0 0 1.5rem 0;
-    max-width: 666px;
+    &-result {
+        margin: 0 0 1.5rem 0;
+        max-width: 666px;
 
-    &__header {
-      font-size: 1.5rem !important;
-      font-weight: normal !important;
-      margin: 0 0 8px;
+        &__header {
+            font-size: 1.5rem !important;
+            font-weight: normal !important;
+            margin: 0 0 8px;
+        }
+
+        &__link {
+            color: var(--second-color) !important;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__body {
+            color: #222;
+            font-size: 1rem;
+
+            @media (prefers-color-scheme: dark) {
+                color: #ddd;
+            }
+        }
+
+        &__time {
+            color: #666;
+        }
     }
-
-    &__link {
-      color: var(--second-color) !important;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    &__body {
-      color: #222;
-      font-size: 1rem;
-
-      @media (prefers-color-scheme: dark) {
-        color: #ddd;
-      }
-    }
-
-    &__time {
-      color: #666;
-    }
-  }
 }
 
 .sisea {
-  &-results {
-    color: #222;
-    font-size: 0.8rem;
-    margin: 0 0 8px;
-  }
+    &-results {
+        color: #222;
+        font-size: 0.8rem;
+        margin: 0 0 8px;
+    }
 
-  &-paging {
-    padding: 2rem 0;
-  }
+    &-paging {
+        padding: 2rem 0;
+    }
 
-  &-highlight {
-    font-weight: bold;
-  }
+    &-highlight {
+        font-weight: bold;
+    }
 }

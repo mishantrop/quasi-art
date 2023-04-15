@@ -1,88 +1,88 @@
 @media (prefers-color-scheme: dark) {
-  .portfolio-category__wrapper {
-    background-color: var(--dark-background);
-  }
+    .portfolio-category__wrapper {
+        background-color: var(--dark-background);
+    }
 
-  .portfolio-category-header__link {
-    color: #fff;
-  }
+    .portfolio-category-header__link {
+        color: #fff;
+    }
 
-  .navbar-menu.in {
-    background-color: var(--dark-background);
-  }
+    .navbar-menu.in {
+        background-color: var(--dark-background);
+    }
 
-  .article ol li,
-  .article ul li {
-    color: var(--dark-text);
-  }
+    .article ol li,
+    .article ul li {
+        color: var(--dark-text);
+    }
 
-  .resume-contacts-form {
-    background-color: #333;
-  }
+    .resume-contacts-form {
+        background-color: #333;
+    }
 
-  .resume__content {
-    color: var(--dark-text);
-  }
+    .resume__content {
+        color: var(--dark-text);
+    }
 
-  .resume-contacts-form h2 {
-    color: #fff;
-  }
+    .resume-contacts-form h2 {
+        color: #fff;
+    }
 
-  .resume-contacts-form p {
-    color: #eee;
-  }
+    .resume-contacts-form p {
+        color: #eee;
+    }
 
-  .resume-contacts-list__link {
-    color: #ddd;
-  }
+    .resume-contacts-list__link {
+        color: #ddd;
+    }
 
-  .resume-contacts label {
-    color: #ddd;
-  }
+    .resume-contacts label {
+        color: #ddd;
+    }
 
-  .resume-contacts-list__link svg path {
-    fill: #fff;
-  }
+    .resume-contacts-list__link svg path {
+        fill: #fff;
+    }
 
-  .article-item-title {
-    color: #fff;
-  }
+    .article-item-title {
+        color: #fff;
+    }
 
-  .article-item-description {
-    color: #ddd;
-  }
+    .article-item-description {
+        color: #ddd;
+    }
 
-  .article-title {
-    color: #fff;
-  }
+    .article-title {
+        color: #fff;
+    }
 
-  .breadcrumbs {
-    color: #ddd;
-  }
+    .breadcrumbs {
+        color: #ddd;
+    }
 
-  .breadcrumbs__a {
-    color: #ddd;
-  }
+    .breadcrumbs__a {
+        color: #ddd;
+    }
 
-  .breadcrumbs__a svg path {
-    fill: #ddd;
-  }
+    .breadcrumbs__a svg path {
+        fill: #ddd;
+    }
 
-  .index-articles {
-    background-color: var(--dark-background);
-  }
+    .index-articles {
+        background-color: var(--dark-background);
+    }
 
-  .index-articles__header,
-  .index-articles__header-link {
-    color: #fff;
-  }
+    .index-articles__header,
+    .index-articles__header-link {
+        color: #fff;
+    }
 
-  .latest-modx-version {
-    background-color: #666;
-    color: #ddd;
-  }
+    .latest-modx-version {
+        background-color: #666;
+        color: #ddd;
+    }
 
-  .sidebar-title {
-    color: #fff;
-  }
+    .sidebar-title {
+        color: #fff;
+    }
 }

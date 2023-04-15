@@ -1,96 +1,96 @@
 .topmenu-search {
-  overflow: hidden;
-  padding: 12px;
-
-  @media (--desktop) {
-    clear: both;
-    float: none;
     overflow: hidden;
-    width: 100%;
-  }
-
-  @media (--mobile) {
-    display: table-cell;
-    margin: 10px 0;
-    padding: 0;
-    vertical-align: middle;
-  }
-
-  &__form {
-    background-color: #fff;
-    float: right;
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
+    padding: 12px;
 
     @media (--desktop) {
-      float: none;
-      width: 100%;
-    }
-  }
-
-  &__input {
-    background-color: #fff;
-    border: 0;
-    border-radius: 0;
-    color: var(--main-color);
-    line-height: 2.3125rem;
-    padding: 0 15px;
-    transition: border-color 0.2s linear;
-    width: 100%;
-
-    &:focus {
-      outline-color: transparent;
-      outline-offset: 0;
-    }
-  }
-
-  &__submit {
-    background-color: transparent;
-    border: 0;
-    color: var(--main-color);
-    cursor: pointer;
-    line-height: 2.3125rem;
-    padding: 8px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: color 0.2s linear;
-
-    svg {
-      display: block;
-      height: 21px;
-      width: 21px;
-
-      path {
-        fill: var(--main-color);
-      }
+        clear: both;
+        float: none;
+        overflow: hidden;
+        width: 100%;
     }
 
-    &:hover {
-      svg {
-        path {
-          fill: var(--second-color);
+    @media (--mobile) {
+        display: table-cell;
+        margin: 10px 0;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    &__form {
+        background-color: #fff;
+        float: right;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+
+        @media (--desktop) {
+            float: none;
+            width: 100%;
         }
-      }
-
-      color: var(--main-color--hover);
     }
-  }
 
-  &__input:focus::-webkit-input-placeholder {
-    color: transparent;
-  }
+    &__input {
+        background-color: #fff;
+        border: 0;
+        border-radius: 0;
+        color: var(--main-color);
+        line-height: 2.3125rem;
+        padding: 0 15px;
+        transition: border-color 0.2s linear;
+        width: 100%;
 
-  &__input:focus::-moz-placeholder {
-    color: transparent;
-  }
+        &:focus {
+            outline-color: transparent;
+            outline-offset: 0;
+        }
+    }
 
-  &__input:focus:-moz-placeholder {
-    color: transparent;
-  }
+    &__submit {
+        background-color: transparent;
+        border: 0;
+        color: var(--main-color);
+        cursor: pointer;
+        line-height: 2.3125rem;
+        padding: 8px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: color 0.2s linear;
 
-  &__input:focus:-ms-input-placeholder {
-    color: transparent;
-  }
+        svg {
+            display: block;
+            height: 21px;
+            width: 21px;
+
+            path {
+                fill: var(--main-color);
+            }
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: var(--second-color);
+                }
+            }
+
+            color: var(--main-color--hover);
+        }
+    }
+
+    &__input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    &__input:focus::-moz-placeholder {
+        color: transparent;
+    }
+
+    &__input:focus:-moz-placeholder {
+        color: transparent;
+    }
+
+    &__input:focus:-ms-input-placeholder {
+        color: transparent;
+    }
 }

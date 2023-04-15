@@ -1,10 +1,10 @@
 :root {
-  --main-color: #233539;
-  --main-color--hover: #011317;
-  --second-color: #d36;
-  --second-color--hover: #b14;
-  --dark-background: #222;
-  --dark-background--hover: #333;
-  --dark-text: #ddd;
-  --dark-link: #fff;
+    --main-color: #233539;
+    --main-color--hover: #011317;
+    --second-color: #d36;
+    --second-color--hover: #b14;
+    --dark-background: #222;
+    --dark-background--hover: #333;
+    --dark-text: #ddd;
+    --dark-link: #fff;
 }

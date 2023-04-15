@@ -1,86 +1,86 @@
 .portfolio-item {
-  border-radius: 56px;
-  box-shadow: 2px 2px 8px 2px #ccc;
-  display: block;
-  margin: 0 0 2rem;
-  overflow: hidden;
-  text-decoration: none;
-
-  @media (prefers-color-scheme: dark) {
-    box-shadow: 2px 2px 8px 2px #000;
-  }
-
-  &__link {
-    border: 0;
-    border-radius: 0;
+    border-radius: 56px;
+    box-shadow: 2px 2px 8px 2px #ccc;
     display: block;
+    margin: 0 0 2rem;
     overflow: hidden;
-    padding: 0;
     text-decoration: none;
 
-    &:hover {
-      color: var(--main-color--hover);
-
-      .portfolio-item__image {
-        &::after {
-          transform: scale(1.1);
-        }
-      }
-    }
-  }
-
-  &__image {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0;
-    overflow: hidden;
-    position: relative;
-    transition: opacity, transform 0.2s linear;
-    width: 100%;
-
-    padding-bottom: 75%;
-
-    &::after {
-      background-image: inherit;
-      background-position: 50%;
-      background-size: cover;
-      bottom: 0;
-      content: '';
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      transform-origin: center;
-      transition: transform .4s ease-in-out;
-    }
-
-    &:hover {
-      opacity: 0.9;
-    }
-  }
-
-  &__info {
-    background-color: #fff;
-    color: var(--main-color);
-
     @media (prefers-color-scheme: dark) {
-      background-color: #222;
-      color: #fff;
+        box-shadow: 2px 2px 8px 2px #000;
     }
 
-    &-title {
-      color: var(--main-color);
-      display: block;
-      font-size: 1.2rem;
-      line-height: 1.5;
-      padding: 10px 5px;
-      text-align: center;
-      text-decoration: none;
+    &__link {
+        border: 0;
+        border-radius: 0;
+        display: block;
+        overflow: hidden;
+        padding: 0;
+        text-decoration: none;
 
-      @media (prefers-color-scheme: dark) {
-        color: #fff;
-      }
+        &:hover {
+            color: var(--main-color--hover);
+
+            .portfolio-item__image {
+                &::after {
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
-  }
+
+    &__image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0;
+        overflow: hidden;
+        position: relative;
+        transition: opacity, transform 0.2s linear;
+        width: 100%;
+
+        padding-bottom: 75%;
+
+        &::after {
+            background-image: inherit;
+            background-position: 50%;
+            background-size: cover;
+            bottom: 0;
+            content: '';
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform-origin: center;
+            transition: transform .4s ease-in-out;
+        }
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    &__info {
+        background-color: #fff;
+        color: var(--main-color);
+
+        @media (prefers-color-scheme: dark) {
+            background-color: #222;
+            color: #fff;
+        }
+
+        &-title {
+            color: var(--main-color);
+            display: block;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            padding: 10px 5px;
+            text-align: center;
+            text-decoration: none;
+
+            @media (prefers-color-scheme: dark) {
+                color: #fff;
+            }
+        }
+    }
 }

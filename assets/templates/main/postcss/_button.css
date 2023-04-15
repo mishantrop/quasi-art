@@ -1,28 +1,28 @@
 .button {
-  background-color: #fff;
-  border-color: #ccc;
-  border-radius: .25rem;
-  border: 1px solid #666;
-  color: var(--main-color);
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: 400;
-  padding: 1rem;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color .2s linear;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
+    background-color: #fff;
+    border-color: #ccc;
+    border-radius: .25rem;
+    border: 1px solid #666;
+    color: var(--main-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s linear;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
 
-  @media (prefers-color-scheme: dark) {
-    background-color: #222;
-    border-color: #eee;
-    color: #eee;
-  }
+    @media (prefers-color-scheme: dark) {
+        background-color: #222;
+        border-color: #eee;
+        color: #eee;
+    }
 
-  /* &--color {
+    /* &--color {
     &-primary {
 
     }
