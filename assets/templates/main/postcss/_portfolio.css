@@ -70,11 +70,13 @@
         }
 
         &-title {
+            align-items: center;
             color: var(--main-color);
-            display: block;
+            display: flex;
             font-size: 1.2rem;
+            justify-content: center;
             line-height: 1.5;
-            padding: 10px 5px;
+            padding: 10px 16px;
             text-align: center;
             text-decoration: none;
 
