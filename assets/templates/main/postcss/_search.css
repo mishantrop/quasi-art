@@ -7,6 +7,11 @@
             font-size: 1.5rem !important;
             font-weight: normal !important;
             margin: 0 0 8px;
+
+            a {
+                line-height: 1.2;
+                text-decoration: none;
+            }
         }
 
         &__link {
@@ -24,6 +29,10 @@
 
             @media (prefers-color-scheme: dark) {
                 color: #ddd;
+            }
+
+            a {
+                line-height: 1.2;
             }
         }
 

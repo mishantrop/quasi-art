@@ -1,3 +1,11 @@
+.menu-container {
+    background-color: #ddd;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: #444;
+    }
+}
+
 .menu {
     align-items: stretch;
     border: 0;

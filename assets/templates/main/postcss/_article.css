@@ -21,7 +21,7 @@
         font-weight: normal;
 
         @media (prefers-color-scheme: dark) {
-            color: var(--second-color);
+            color: #ff7ba3;
         }
     }
 
@@ -66,6 +66,10 @@
         text-decoration: underline;
         text-underline-position: under;
 
+        @media (prefers-color-scheme: dark) {
+            color: #ff7ba3;
+        }
+
         &:hover {
             color: var(--second-color--hover);
             text-decoration: none;
@@ -95,15 +99,15 @@
         color: #222;
         display: block;
         float: right;
+        line-height: 1.2;
         margin-left: 30px;
         max-width: 400px;
         padding: 5px;
         quotes: '\00ab' '\00bb';
         text-align: right;
 
-        strong {
-            display: block;
-            text-align: right;
+        @media (prefers-color-scheme: dark) {
+            color: #eee;
         }
 
         @media (--mobile) {
@@ -111,6 +115,11 @@
             margin-left: 0;
             max-width: none;
             width: 100%;
+        }
+
+        strong {
+            display: block;
+            text-align: right;
         }
     }
 
@@ -195,6 +204,10 @@
 
         @media (--mobile) {
             width: 100%;
+        }
+
+        & td {
+            padding: 8px;
         }
     }
 
