@@ -65,6 +65,14 @@ html {
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    body,
+    html {
+        background-color: #333;
+        color: #ddd;
+    }
+}
+
 ::selection {
     background-color: var(--main-color--hover);
     color: #fff;
@@ -144,8 +152,9 @@ ul.none {
     margin: 4px;
 }
 
-table {
+table, .table {
     border-collapse: collapse;
+    width: 100%;
 
     &.table-bordered {
         border: 2px solid #aaa;
@@ -157,6 +166,14 @@ table {
         & td, th {
             border: 1px solid #aaa;
             padding: 10px;
+        }
+    }
+
+    & tr:nth-child(odd) {
+        background-color: #eee;
+
+        @media (prefers-color-scheme: dark) {
+            background-color: #333;
         }
     }
 
