@@ -4,8 +4,8 @@
 .article {
     padding: 0 32px 0 0;
 
-    @media (--tablet) {
-        padding: 0 16px;
+    @media (--desktop) {
+        padding: 0;
     }
 
     &__footer {
@@ -87,6 +87,10 @@
 
         & + p {
             margin: 1rem 0 0;
+        }
+
+        img {
+            max-width: 100%;
         }
 
         @media (prefers-color-scheme: dark) {

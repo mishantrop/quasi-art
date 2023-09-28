@@ -12,7 +12,7 @@
 .container {
     margin: 0 auto;
     max-width: 1280px;
-    padding: 0 32px;
+    padding: 0 12px;
     width: 100%;
 }
 
@@ -38,7 +38,7 @@
 
 .row .col {
     float: left;
-    padding: 0 16px;
+    padding: 0 8px;
 }
 
 .row .col.s1 {
@@ -93,6 +93,14 @@
 }
 
 @media only screen and (min-width: 769px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    .row .col {
+        padding: 0 16px;
+    }
+
     .row .col.m1,
     .row .col.m10,
     .row .col.m11,
@@ -148,6 +156,14 @@
 }
 
 @media only screen and (min-width: 1201px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    .row .col {
+        padding: 0 16px;
+    }
+
     .row .col.l1,
     .row .col.l10,
     .row .col.l11,
