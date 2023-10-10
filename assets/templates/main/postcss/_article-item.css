@@ -1,8 +1,14 @@
 .article-item {
+    border-radius: 32px;
     color: var(--main-color);
     display: flex;
+    margin-bottom: 1rem;
     overflow: hidden;
     text-decoration: none;
+
+    @media (--mobile) {
+        border-radius: 16px;
+    }
 
     @media (prefers-color-scheme: dark) {
         background-color: #333;
@@ -14,6 +20,7 @@
     }
 
     &__left {
+        background-color: #233539;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -28,7 +35,11 @@
     }
 
     &__right {
-        padding: 4px 4px 0 16px;
+        padding: 12px 12px 12px 16px;
+
+        @media (--mobile) {
+            padding: 16px;
+        }
     }
 
     &-title {
@@ -63,12 +74,6 @@
         @media (prefers-color-scheme: dark) {
             background-color: var(--dark-background--hover);
         }
-    }
-
-    &-wrapper {
-        border-radius: 32px;
-        margin-bottom: 1rem;
-        overflow: hidden;
     }
 
     &__description {

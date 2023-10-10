@@ -12,7 +12,7 @@
 
 .resume-header {
     align-items: center;
-    background: linear-gradient(145deg, #233539, #d1275a);
+    background-color: #233539;
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
@@ -20,42 +20,16 @@
     position: relative;
     z-index: 0;
 
-    /* &::before {
-        background: red;
-        box-shadow: 0 0 140px 64px #c52858;
-        z-index: 2;
-        top: -100%;
-        left: -72%;
-        opacity: .8;
-    } */
-
-    /* &::before,
-    &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    } */
-
-    /* &::after {
-        background: #fff;
-        z-index: 3;
-        bottom: -96%;
-        right: -72%;
-        box-shadow: 0 0 140px 64px #fff;
-        opacity: 1;
-        border-radius: 100%;
-    } */
-
     &__avatar {
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 50%;
         display: block;
-        height: 200px;
-        opacity: 0.8;
-        transition: opacity 0.2s linear;
-        width: 200px;
+        height: 100%;
+        opacity: .8;
+        transition: opacity .2s linear;
+        width: 100%;
+        border: 4px solid #233539;
 
         &:hover {
             opacity: 1;
@@ -63,29 +37,20 @@
 
         &--circle {
             &-primary {
-                background: radial-gradient(circle at 30% 107%,
-                var(--second-color) 0%,
-                var(--second-color) 5%,
-                var(--second-color) 45%,
-                var(--second-color) 60%,
-                var(--second-color--hover) 90%);
+                align-items: center;
+                /* background: radial-gradient(circle at 30% 107%, var(--second-color) 0%, var(--second-color) 5%, var(--second-color) 45%, var(--second-color) 60%, var(--second-color--hover) 90%); */
+                background-color: #eee;
                 border-radius: 50%;
-                height: 216px;
+                display: flex;
+                height: 180px;
+                justify-content: center;
                 margin: 0 24px 0 auto;
                 padding: 4px;
-                width: 216px;
+                width: 180px;
 
                 @media (--mobile) {
                     margin: 0 auto;
                 }
-            }
-
-            &-secondary {
-                background-color: var(--main-color);
-                border-radius: 50%;
-                height: 208px;
-                padding: 4px;
-                width: 208px;
             }
         }
     }
@@ -141,7 +106,7 @@
         vertical-align: middle;
 
         &-wrapper {
-            padding: 2rem 0 0;
+            padding: 3rem 0 0;
             display: flex;
         }
 
