@@ -4,10 +4,19 @@
     display: block;
     margin: 0 0 2rem;
     overflow: hidden;
+    transition: box-shadow 0.2s linear;
     text-decoration: none;
+
+    &:hover {
+        box-shadow: 2px 2px 8px 6px #ccc;
+    }
 
     @media (prefers-color-scheme: dark) {
         box-shadow: 2px 2px 8px 2px #000;
+    }
+
+    @media (--mobile) {
+        border-radius: 16px;
     }
 
     &__link {
@@ -19,6 +28,7 @@
         text-decoration: none;
 
         &:hover {
+            transition: color 0.2s linear;
             color: var(--main-color--hover);
 
             .portfolio-item__image {

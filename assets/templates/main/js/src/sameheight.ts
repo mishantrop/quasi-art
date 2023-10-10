@@ -16,7 +16,9 @@ export const sameHeight = (selector: string) => {
     } else {
         let maxHeight = 0
         elements.forEach((element) => {
-            maxHeight = element.offsetHeight > maxHeight ? element.offsetHeight : maxHeight
+            maxHeight = element.offsetHeight > maxHeight
+                ? element.offsetHeight
+                : maxHeight
         })
         elements.forEach((element) => {
             // eslint-disable-next-line no-param-reassign

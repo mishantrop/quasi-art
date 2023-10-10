@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import hljs from 'highlight.js/lib/core'
 import hljsJavaScript from 'highlight.js/lib/languages/javascript'
@@ -10,7 +11,6 @@ import { initBackToTopScroll } from './backtotop'
 import { initLightbox } from './lightbox'
 import { sameHeight } from './sameheight'
 import { initResume } from './resume'
-import { getWindowWidth } from './helpers'
 import { Navigation } from './navigation'
 
 const detectAdBlock = () => {
@@ -23,19 +23,9 @@ const detectAdBlock = () => {
     }
 }
 
-// @ts-ignore
-window.windowInnerWidth = null
-
 const sameHeightWithResize = (selector: string) => {
     sameHeight(selector)
     window.addEventListener('resize', () => {
-        const ww = getWindowWidth()
-        // @ts-ignore
-        if (window.windowInnerWidth !== null && ww === window.windowInnerWidth) {
-            return
-        }
-        // @ts-ignore
-        window.windowInnerWidth = ww
         sameHeight(selector)
     })
 }
@@ -49,11 +39,11 @@ const init = () => {
 
     // Главная страница / Работы портфолио
     sameHeightWithResize('.portfolio-item__info-title')
+    sameHeightWithResize('.article-item')
 
     // Портфолио / Работа / Галерея
     const portfolioContainer = document.querySelector('.portfoilo-inner-item__images-wrapper')
     if (portfolioContainer) {
-    // @ts-ignore
         imagesLoaded(portfolioContainer, () => {
             sameHeightWithResize('.portfoilo-inner-item__images-wrapper figure')
             sameHeightWithResize('.portfoilo-inner-item__images-wrapper figcaption')
