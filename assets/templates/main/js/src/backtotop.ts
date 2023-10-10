@@ -29,7 +29,7 @@ export const initBackToTopScroll = ({
     })
 
     const el = document.querySelector(targetSelector) || false
-    if (el) {
+    if (!el) {
         console.warn('target not found: ', targetSelector)
         return
     }
