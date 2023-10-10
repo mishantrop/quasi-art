@@ -10,7 +10,7 @@ module.exports = (env, argv) => {
 
   const isAnalyzeEnabled = env.ANALYZE === '1'
   const isAnalyzeNeedReport = env.ANALYZENEEDREPORT === '1'
-  const analyzerMode = env.ANALYZERMODE || 'json'
+  // const analyzerMode = env.ANALYZERMODE || 'json'
 
   const config = {
     entry: path.resolve(__dirname, 'assets/templates/main/js/src/index.ts'),
@@ -38,7 +38,7 @@ module.exports = (env, argv) => {
         ? [
             new BundleAnalyzerPlugin({
               generateStatsFile: isAnalyzeNeedReport,
-              analyzerMode,
+              analyzerMode: 'server',
               openAnalyzer: !isAnalyzeNeedReport,
               defaultSizes: 'gzip',
             }),
